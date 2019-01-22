@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+@import "_fonts";
+
+@mixin shadow($shadow...) {
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+
+
+@mixin trans ($trans) {
+	transition:$trans;
+	-webkit-transition:$trans;
+	-moz-transition:$trans;
+	-o-transition:$trans;
+	-ms-transition:$trans;
+}
+
+@mixin border-radius ($border-radius) {
+	border-radius:$border-radius;
+	-webkit-border-radius:$border-radius;
+	-moz-border-radius:$border-radius;
+	-o-border-radius:$border-radius;
+	-ms-border-radius:$border-radius;
+}
+
+body {font-family: 'futurademic', sans-serif; font-size: 16px;font-weight: 500;background: #fff;color:#000; min-height: 100vh;}
+
+img { max-width: 100%; height:auto; }
+
+@media(min-width: 1200px){
+    .container {max-width: 1600px;}
+    .col-12 {padding: 0;}
+    .container-fluid {}
+}
+
+/*header*/
+.h { 
+    &-logo { font-size: 30px; font-family: 'futurafuturisc', sans-serif; font-weight: 700; color: #2312be; 
+        &:hover, &:focus {text-decoration: none; color: #2312be; }
+    }
+    &-menu { margin-top: 10px;
+        ul { padding: 0; margin: 0; list-style: none; text-align: justify; 
+            &:before { content: ''; display: block; width: 100%; margin-bottom: -1.2em; } 
+            &:after { content: ''; display: inline-block; width: 100%; } 
+            li { display: inline-block; position: relative; top: 1.2em; 
+                a { color: #2312be; opacity: 1; @include trans(0.3s);
+                    &:hover, &:focus {text-decoration: none; opacity: 0.5; @include trans(0.3s);}
+                }
+            }
+        } 
+    } 
+    &-srch { margin-top: 10px;
+        button {background: url('../img/srch-btn.png')no-repeat;background-size: 100% 100%;width: 17px;height: 18px;display: block; margin: 0 auto;border: 0; opacity: 1; @include trans(0.3s);
+            &:hover, &:focus {cursor: pointer; box-shadow: none; outline: 0; opacity: 0.5; @include trans(0.3s);}
+        }
+    }
+    &-right { background: #2413be; position: absolute; width: 100%; top: 0; height: 200px; margin-top: -40px; padding-top: 76px; @include trans(0.3s);
+        &-links { margin-right: 140px; float: right; 
+            a { color: #fff; margin: 0 20px; text-transform: uppercase; }
+        } 
+    } 
+}
+header { padding: 40px 0;padding-left: 35px;background: #fff;position: fixed; left: 0;width: 100%;top: 0; z-index: 200;
+    &.fixed{
+        .h-right {height: 125px; padding-top: 50px;@include trans(0.3s);}
+    } 
+}
+/*header*/
+
+
+@import "_index";
+ 
+
+/*footer*/
+footer {} 
+.f {
+    
+}
+
+
+/*footer*/
+
+
