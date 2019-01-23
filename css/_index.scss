@@ -33,19 +33,194 @@
 
 /*best*/
 .best{ padding: 100px 0 0;
-    &-ttl { font-size: 92px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; }
+    &-ttl { font-size: 86px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; }
     &-txt { font-size: 24px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 300; margin-top: 20px; }
-    &-btn {font-size: 18px;display: block;background: linear-gradient(to right, #2312be, #ffffff00, #ffffff00), url('../img/arr-purp.png')no-repeat 94% 50%; max-width: 400px;letter-spacing: 3px;text-transform: uppercase;text-align: center; padding: 12px 10px; color: #2312be; margin-top: 60px;
-        &:hover, &:focus {text-decoration: none;color: #fff;}
+    &-btn {font-size: 18px;display: block;background: linear-gradient(to right, #2312be, #ffffff00, #ffffff00), url('../img/arr-purp.png')no-repeat 94% 50%; max-width: 400px;letter-spacing: 3px;text-transform: uppercase;text-align: center; padding: 12px 10px; color: #2312be; margin-top: 60px;opacity: 1; @include trans(0.3s);
+        &:hover, &:focus {text-decoration: none;color: #2312be;opacity: 0.5; @include trans(0.3s);}
     }
     &-top{
         &-ttl {font-size: 36px;color: #2312be;padding-left: 30px;}
         &-txt {color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 300;text-decoration: underline;padding-left: 30px;}
     }
     &-img {margin-top: 20px;margin-bottom: 77px;}
-    &-bl { max-width: 640px; margin: 0 auto; position: relative; 
-        &-num { position: absolute; top: 0; color: #fff; font-size: 24px; background: #000; width: 300px; padding: 33px 0;font-family: 'futurafuturisc', sans-serif; font-weight: 300; padding-left: 20px; } 
-        &-ttl { position: absolute; bottom: 30px;left: 20px;color: #fff; font-size: 24px;background: url('../img/arr.png')no-repeat 94% 50%; padding-right: 75px;}
+    &-bl { max-width: 640px; margin: 0 auto; position: relative; display: block; color: #fff; opacity: 1; @include trans(0.3s);
+        &-img {display: block;}
+        &-num { position: absolute; top: 0; color: #fff; font-size: 24px; background: #000; width: 300px; padding: 33px 0;font-family: 'futurafuturisc', sans-serif; font-weight: 300; padding-left: 20px;display: block; } 
+        &-ttl { position: absolute; bottom: 30px;left: 20px;color: #fff; font-size: 24px;background: url('../img/arr.png')no-repeat 94% 50%; padding-right: 75px;display: block;}
+        &:hover, &:focus {text-decoration: none;color: #fff;opacity: 0.5; @include trans(0.3s);} 
     } 
 }
 /*best*/
+@media(min-width: 992px) and (max-width: 1600px){
+    .best {
+        &-ttl {padding-left: 15px;}
+        &-txt {padding-left: 15px;}
+    }
+}
+
+/*last_konk*/
+.last_konk{ padding: 100px 0 50px;
+    .col-12 {padding: 0 15px;}
+    &-ttl { font-size: 86px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; margin-bottom: 70px; }
+    &-btn {font-size: 18px;display: block;background: linear-gradient(to right, #2312be, #ffffff00, #ffffff00), url('../img/arr-purp.png')no-repeat 94% 50%; max-width: 400px;letter-spacing: 3px;text-transform: uppercase;text-align: center; padding: 12px 10px; color: #2312be; margin-top: 24px;margin-bottom: 70px; opacity: 1; @include trans(0.3s);
+        &:hover, &:focus {text-decoration: none;color: #2312be;opacity: 0.5; @include trans(0.3s);}
+    }
+    &-top{
+        &-ttl {font-size: 36px;color: #2312be;padding-left: 30px;}
+        &-txt {color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 300;text-decoration: underline;padding-left: 30px;}
+    }
+    &-img {margin-top: 20px;margin-bottom: 77px;}
+    &-bl { max-width: 402px; margin: 0 auto; position: relative; display: block; color: #fff;overflow: hidden; opacity: 1; @include trans(0.3s);
+        &-top{color: #2312be;overflow: hidden; display: block;font-family: 'futurafuturisc', sans-serif; font-weight: 300;margin-bottom: 10px; position: relative;
+            &:before { content: ''; background: #2312be; width: 100%; height: 1px; display: block; top: 50%; position: absolute; z-index: -1; }
+            &-left {float: left;display: block;background: #fff; padding-right: 5px;}
+            &-right {float: right;display: block;background: #fff; padding-left: 5px;}
+        }
+        &-img {display: block; text-align: right;position: relative;}
+        &-num { position: absolute; top: 0; color: #fff; font-size: 24px; background: #000; width: 241px; padding: 33px 0;font-family: 'futurafuturisc', sans-serif; font-weight: 300; padding-left: 20px;display: block; text-align: left; z-index: 2;
+            span {text-decoration: underline;}
+        } 
+        &-ttl { position: absolute; bottom: 30px;left: 108px;color: #fff; font-size: 24px;background: url('../img/arr.png')no-repeat 94% 50%; padding-right: 75px;display: block;}
+        &-side { display: block; height: 100%; width: 82px; position: absolute; left: 0; bottom: 0; background: #fff;
+            span {color: #2312be; text-decoration: underline; position: absolute; bottom: 25px; left: 0; transform: rotate(-90deg);}
+        }
+        &:hover, &:focus {text-decoration: none;color: #fff;opacity: 0.5; @include trans(0.3s);}
+    } 
+}
+/*last_konk*/
+@media(min-width: 992px) and (max-width: 1600px){
+    .last_konk {
+        &-bl { 
+            &-img {
+                img {width:calc(100% - 10%);}
+            }
+            &-num { font-size: 19px; width: 160px; padding: 20px 0; padding-left: 16px; } 
+            &-ttl { left: 45px; font-size: 19px; padding-right: 67px; }
+            &-side {width: 10%; }
+        } 
+    }
+}
+
+/*memb*/
+.memb{ padding: 50px 0;
+    .col-12 {padding: 0 15px;}
+    &-ttl { font-size: 86px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; margin-bottom: 70px; }
+    &-btn {font-size: 18px;display: block;background: linear-gradient(to right, #2312be, #ffffff00, #ffffff00), url('../img/arr-purp.png')no-repeat 94% 50%; max-width: 400px;letter-spacing: 3px;text-transform: uppercase;text-align: center; padding: 12px 10px; color: #2312be; margin-top: 24px;margin-bottom: 70px; opacity: 1; @include trans(0.3s);
+        &:hover, &:focus {text-decoration: none;color: #2312be;opacity: 0.5; @include trans(0.3s);}
+    }
+    &-top{
+        &-ttl {font-size: 36px;color: #2312be;padding-left: 30px;}
+        &-txt {color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 300;text-decoration: underline;padding-left: 30px;}
+    }
+    &-img {margin-top: 20px;margin-bottom: 77px;}
+    &-bl { max-width: 160px; margin: 0 auto;  display: block; 
+        &:hover, &:focus {text-decoration: none;color: #fff;opacity: 0.5; @include trans(0.3s);}
+        &-img {margin-top: 18px;display:block;}
+        &-ttl {font-size: 24px;color: #2312be;display:block;}
+        &-txt {color: #37363b;font-family: 'futurafuturisc', sans-serif; font-weight: 300;margin-top: 10px;display: block;}
+    } 
+}
+/*memb*/
+@media(min-width: 992px) and (max-width: 1600px){
+    .memb {
+        &-bl { 
+            &-img {
+                img {width:calc(100% - 10%);}
+            }
+            &-num { font-size: 19px; width: 160px; padding: 20px 0; padding-left: 16px; } 
+            &-ttl { left: 45px; font-size: 19px; padding-right: 67px; }
+            &-side {width: 10%; }
+        } 
+    }
+}
+
+/*battles*/
+.battles{ padding: 50px 0;
+    &-ttl { font-size: 86px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; margin-bottom: 70px;padding-left: 175px; }
+    &-btn {font-size: 18px;display: block;background: linear-gradient(to right, #2312be, #ffffff00, #ffffff00), url('../img/arr-purp.png')no-repeat 94% 50%; max-width: 400px;letter-spacing: 3px;text-transform: uppercase;text-align: center; padding: 12px 10px; color: #2312be; margin-top: 24px;margin-bottom: 70px; opacity: 1; @include trans(0.3s);
+        &:hover, &:focus {text-decoration: none;color: #2312be;opacity: 0.5; @include trans(0.3s);}
+    }
+    &-cont {padding-left: 175px;}
+    &-top{
+        &-ttl {font-size: 36px;color: #2312be;}
+        &-txt {color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 300;text-decoration: underline;font-size: 18px;
+            span{font-family: 'futurademic', sans-serif; padding-left: 30px; }
+        }
+    }
+    &-btm {
+        &-txt {color: #2413be;font-size: 24px;
+            span {width: 23px; height: 23px; display: inline-block; margin: 0 15px; position: relative;top: 3px;
+                &:before {content: ''; position: absolute; width: 100%; height: 1px; background: #2413be; top: 50%; left: 0; transform: rotate(45deg);}
+                &:after {content: ''; position: absolute; width: 100%; height: 1px; background: #2413be; top: 50%; left: 0; transform: rotate(-45deg);}
+            }
+        }
+    }
+    &-img {margin-top: 20px;margin-bottom: 77px;}
+    &-right {padding: 0 15px;}
+    &-bl { display: block; position: relative; 
+        &-img { display: block; } 
+        &-num { display: block; position: absolute; top: 0; background: #000; color: #fff; width: 320px; height: 98px; font-size: 20px; font-family: 'futurafuturisc', sans-serif; font-weight: 300; padding: 12px 38px;
+            span {font-family: 'futurademic', sans-serif;font-size: 24px;}
+        }
+        &-ttl {color: #fff;font-size: 24px; position: absolute; bottom: 30px; left: 30px;
+            span {width: 23px; height: 23px; display: inline-block; margin: 0 15px; position: relative;top: 3px;
+                &:before {content: ''; position: absolute; width: 100%; height: 1px; background: #fff; top: 50%; left: 0; transform: rotate(45deg);}
+                &:after {content: ''; position: absolute; width: 100%; height: 1px; background: #fff; top: 50%; left: 0; transform: rotate(-45deg);}
+            }
+        }
+        &:hover, &:focus {text-decoration: none;color: #2312be;opacity: 0.5; @include trans(0.3s);}
+    } 
+}
+/*battles*/
+@media(min-width: 992px) and (max-width: 1600px){
+    .battles {
+        &-ttl {padding-left: 15px;}
+        &-cont {padding-left: 15px;}
+        &-bl { 
+            &-num { font-size: 16px; width: 160px; padding: 20px 0; padding-left: 16px; height: 89px; 
+                span {font-size: 18px;}
+            } 
+            &-ttl { font-size: 16px;  
+                span {margin: 0 6px;width: 20px;height: 20px;}
+            }
+        } 
+    }
+}
+
+/*learn*/
+.learn{ padding: 50px 0 0px;
+    &-ttl { font-size: 86px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; margin-bottom: 70px; }
+    &-btn {font-size: 18px;display: block;background: linear-gradient(to right, #2312be, #ffffff00, #ffffff00), url('../img/arr-purp.png')no-repeat 94% 50%; max-width: 400px;letter-spacing: 3px;text-transform: uppercase;text-align: center; padding: 12px 10px; color: #2312be; margin-top: 24px;margin-bottom: 70px; opacity: 1; @include trans(0.3s);
+        &:hover, &:focus {text-decoration: none;color: #2312be;opacity: 0.5; @include trans(0.3s);}
+    }
+    &-txt {font-size: 36px;color: #2312be; padding-right: 75px;background: url('../img/arr-purp.png')no-repeat 94% 50%; display: inline-block;}
+    &-img {text-align: center;} 
+    &-bl {display: flex; justify-content: space-between; flex-direction: column; min-height: 333px; padding: 40px 20px 20px 40px;opacity: 1; @include trans(0.3s);
+        &-ttl {font-size: 24px;display: block;}
+        &-txt {font-size: 24px;font-family: 'futurafuturisc', sans-serif; font-weight: 300;display: block;text-decoration: underline;}
+        &:hover, &:focus {text-decoration: none;opacity: 0.5; @include trans(0.3s);}
+    }
+    &-cls {
+        &:nth-child(2n+1){
+            .learn-bl {background: url('../img/arr.png')no-repeat 90% 92%, #2413be;
+                &-ttl {color: #fff;}
+                &-txt {color: #fff;}
+            }    
+        }
+        &:nth-child(2n){
+            .learn-bl {background: url('../img/arr-purp.png')no-repeat 90% 92%, #fff;
+                &-ttl {color: #2413be;}
+                &-txt {color: #2413be;}
+            }    
+        }
+    }
+}
+/*learn*/
+@media(min-width: 992px) and (max-width: 1600px){
+    .learn {
+        &-ttl {padding-left: 15px;}
+        &-bl { 
+            &-txt {margin-top: 93px;}
+        } 
+    }
+}

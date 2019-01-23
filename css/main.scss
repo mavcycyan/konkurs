@@ -74,12 +74,51 @@ header { padding: 40px 0;padding-left: 35px;background: #fff;position: fixed; le
  
 
 /*footer*/
-footer {} 
+footer { background: #2413be; color: #fff; padding-left: 35px;} 
 .f {
-    
+    &-left {display: flex; justify-content: space-between; flex-direction: column;min-height: 390px;padding-bottom: 30px;}
+    &-right {background: #000; display: flex; justify-content: space-between; flex-direction: column; min-height: 100%;
+        &-btm { margin-top: 19px; padding-bottom: 30px;
+            ul { padding: 0 10%; margin: 0; list-style: none; text-align: justify;
+                &:before { content: ''; display: block; width: 100%; margin-bottom: -1.2em; } 
+                &:after { content: ''; display: inline-block; width: 100%; } 
+                li { display: inline-block; position: relative; top: 1.2em; 
+                    a { color: #2413be; text-transform: uppercase;  @include trans(0.3s);
+                        &:hover, &:focus { color: #fff;text-decoration: none;  @include trans(0.3s);}
+                    }
+                    .copy {color: #fff;}
+                }
+            } 
+        }     
+    }
+    &-logo { font-size: 30px; font-family: 'futurafuturisc', sans-serif; font-weight: 700; color: #fff; margin-top: 20px;
+        &:hover, &:focus {text-decoration: none; color: #fff; }
+    }
+    &-soc {
+        a { color: #fff; margin-right: 8px; font-size: 24px; } 
+    } 
+    &-ml { font-size: 24px; color: #fff; }
+    &-menu { margin-top: 19px;
+        ul { padding: 0 10%; margin: 0; list-style: none; text-align: justify; max-width: 900px; 
+            &:before { content: ''; display: block; width: 100%; margin-bottom: -1.2em; } 
+            &:after { content: ''; display: inline-block; width: 100%; } 
+            li { display: inline-block; position: relative; top: 1.2em; 
+                a { color: #2413be; text-transform: uppercase;  @include trans(0.3s);
+                    &:hover, &:focus { color: #fff;text-decoration: none;  @include trans(0.3s);}
+                }
+            }
+        } 
+    } 
 }
 
 
 /*footer*/
-
+@media(min-width: 992px) and (max-width: 1600px){
+    footer { padding-left: 15px;} 
+    .f{
+        &-left {min-height: 250px;}
+        
+        &-ml { font-size: 20px; }        
+    }
+}
 
