@@ -45,6 +45,10 @@ img {
   .col-12 {
     padding: 0; } }
 /*header*/
+.h-mob {
+  display: none; }
+.h-pc {
+  display: block; }
 .h-logo {
   font-size: 30px;
   font-family: 'futurafuturisc', sans-serif;
@@ -155,6 +159,90 @@ header {
     -ms-transition: 0.3s; }
 
 /*header*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  header.fixed .h-right {
+    height: 144px;
+    padding-top: 61px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .h-right {
+    position: static;
+    padding: 10px 10px;
+    margin: 0;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 20px; }
+    .h-right-links {
+      float: none;
+      margin-right: 0;
+      text-align: right; }
+      .h-right-links a {
+        color: #2413be; }
+
+  header {
+    padding: 20px; }
+    header.fixed .h-right {
+      padding: 10px 10px;
+      height: auto; } }
+@media (max-width: 767px) {
+  header {
+    padding: 20px 0;
+    background: #2413be;
+    color: #fff; }
+
+  .h-mob {
+    display: block; }
+    .h-mob-logo {
+      color: #fff;
+      text-align: center;
+      display: block;
+      max-width: 59px;
+      margin: 0 auto; }
+    .h-mob-btn {
+      overflow: hidden; }
+      .h-mob-btn button {
+        float: right;
+        background: none;
+        border: 1px solid transparent;
+        display: block;
+        width: 100%;
+        max-width: 81px; }
+        .h-mob-btn button span {
+          height: 1px;
+          width: 100%;
+          margin: 8px 0;
+          background: #fff;
+          display: block; }
+          .h-mob-btn button span:first-child {
+            margin-top: 0; }
+          .h-mob-btn button span:last-child {
+            margin-bottom: 0; }
+    .h-mob-srch button {
+      background: url("../img/srch-mob-btn.png") no-repeat;
+      background-size: 100% 100%;
+      width: 17px;
+      height: 18px;
+      display: block;
+      margin: 0 0;
+      border: 0;
+      opacity: 1;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      -ms-transition: 0.3s; }
+      .h-mob-srch button:hover, .h-mob-srch button:focus {
+        cursor: pointer;
+        box-shadow: none;
+        outline: 0;
+        opacity: 0.5;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        -ms-transition: 0.3s; }
+  .h-pc {
+    display: none; } }
 /*main*/
 .main {
   padding-top: 125px;
@@ -266,6 +354,19 @@ header {
 @media (min-width: 992px) and (max-width: 1600px) {
   .main-cont {
     padding-left: 5%; } }
+@media (max-width: 767px) {
+  .main {
+    padding-top: 64px; }
+    .main-cont {
+      padding: 0 15px 17vh;
+      min-height: calc(100vh - 64px); }
+    .main-ttl {
+      padding: 17vh 0 25px;
+      font-size: 23px; }
+    .main-scrl {
+      max-width: 100%; }
+    .main .main-side {
+      margin-top: 0; } }
 /*best*/
 .best {
   padding: 100px 0 0; }
@@ -371,6 +472,9 @@ header {
     padding-left: 15px; }
   .best-txt {
     padding-left: 15px; } }
+@media (max-width: 767px) {
+  .best {
+    display: none; } }
 /*last_konk*/
 .last_konk {
   padding: 100px 0 50px; }
@@ -532,6 +636,9 @@ header {
     padding-right: 67px; }
   .last_konk-bl-side {
     width: 10%; } }
+@media (max-width: 767px) {
+  .last_konk {
+    display: none; } }
 /*memb*/
 .memb {
   padding: 50px 0; }
@@ -626,6 +733,9 @@ header {
     padding-right: 67px; }
   .memb-bl-side {
     width: 10%; } }
+@media (max-width: 767px) {
+  .memb {
+    display: none; } }
 /*battles*/
 .battles {
   padding: 50px 0; }
@@ -792,6 +902,9 @@ header {
       margin: 0 6px;
       width: 20px;
       height: 20px; } }
+@media (max-width: 767px) {
+  .battles {
+    display: none; } }
 /*learn*/
 .learn {
   padding: 50px 0 0px; }
@@ -885,6 +998,9 @@ header {
     padding-left: 15px; }
   .learn-bl-txt {
     margin-top: 93px; } }
+@media (max-width: 767px) {
+  .learn {
+    display: none; } }
 /*footer*/
 footer {
   background: #2413be;
@@ -1005,5 +1121,8 @@ footer {
     min-height: 250px; }
   .f-ml {
     font-size: 20px; } }
+@media (max-width: 767px) {
+  footer {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

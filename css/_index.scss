@@ -30,6 +30,13 @@
         &-cont {padding-left: 5%;}
     }
 }
+@media(max-width: 767px){
+    .main { padding-top: 64px;
+        &-cont { padding: 0 15px 17vh; min-height: calc(100vh - 64px); } 
+        &-ttl { padding: 17vh 0 25px; font-size: 23px; } 
+        &-scrl { max-width: 100%; } .main-side { margin-top: 0; }
+    } 
+}
 
 /*best*/
 .best{ padding: 100px 0 0;
@@ -56,6 +63,9 @@
         &-ttl {padding-left: 15px;}
         &-txt {padding-left: 15px;}
     }
+}
+@media(max-width: 767px){
+    .best {display: none;}
 }
 
 /*last_konk*/
@@ -100,6 +110,9 @@
         } 
     }
 }
+@media(max-width: 767px){
+    .last_konk {display: none;}
+}
 
 /*memb*/
 .memb{ padding: 50px 0;
@@ -132,6 +145,9 @@
             &-side {width: 10%; }
         } 
     }
+}
+@media(max-width: 767px){
+    .memb {display: none;}
 }
 
 /*battles*/
@@ -186,6 +202,9 @@
         } 
     }
 }
+@media(max-width: 767px){
+    .battles {display: none;}
+}
 
 /*learn*/
 .learn{ padding: 50px 0 0px;
@@ -223,4 +242,7 @@
             &-txt {margin-top: 93px;}
         } 
     }
+}
+@media(max-width: 767px){
+    .learn {display: none;}
 }
