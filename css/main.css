@@ -79,12 +79,15 @@ img {
       top: 1.2em; }
       .h-menu ul li a {
         color: #2312be;
+        border-bottom: 3px solid transparent;
         opacity: 1;
         transition: 0.3s;
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         -o-transition: 0.3s;
         -ms-transition: 0.3s; }
+        .h-menu ul li a.active {
+          border-bottom: 3px solid #2312be; }
         .h-menu ul li a:hover, .h-menu ul li a:focus {
           text-decoration: none;
           opacity: 0.5;
@@ -1133,6 +1136,160 @@ header {
   .learn-txt {
     font-size: 30px;
     margin-bottom: 20px; } }
+/*page_compet*/
+.page_compet {
+  padding-top: 225px;
+  padding-bottom: 50px; }
+  .page_compet-tweek-ttl {
+    font-size: 86px;
+    color: #2312be;
+    font-family: 'futurafuturisc', sans-serif;
+    font-weight: 500;
+    line-height: 1; }
+  .page_compet-tweek-sub_ttl {
+    font-size: 36px;
+    color: #2312be;
+    padding-left: 30px;
+    background: url(../img/arr-purp.png) no-repeat 94% 50%;
+    padding-right: 75px;
+    display: inline-block; }
+  .page_compet-tweek-txt {
+    font-size: 24px;
+    color: #2312be;
+    font-family: 'futurafuturisc', sans-serif;
+    font-weight: 300;
+    margin-top: 20px; }
+  .page_compet-tweek-date {
+    color: #2312be;
+    overflow: hidden;
+    display: block;
+    font-family: 'futurafuturisc', sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 30px;
+    margin-top: 10px;
+    max-width: 320px; }
+    .page_compet-tweek-date span:first-child {
+      float: left;
+      display: block;
+      padding-right: 5px; }
+    .page_compet-tweek-date span:last-child {
+      float: right;
+      display: block;
+      padding-left: 5px; }
+  .page_compet-tweek-bl {
+    padding: 20px 0;
+    padding-left: 160px;
+    padding-right: 80px; }
+    .page_compet-tweek-bl-date {
+      overflow: hidden;
+      position: relative; }
+      .page_compet-tweek-bl-date:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        height: 1px;
+        width: 100%;
+        background: #2312be;
+        z-index: 0; }
+      .page_compet-tweek-bl-date span {
+        z-index: 1;
+        position: relative;
+        color: #2312be; }
+        .page_compet-tweek-bl-date span:first-child {
+          float: left;
+          background: #fff;
+          padding-right: 5px; }
+        .page_compet-tweek-bl-date span:last-child {
+          float: right;
+          background: #fff;
+          padding-left: 5px; }
+    .page_compet-tweek-bl-ttl {
+      font-size: 24px;
+      background: url(../img/arr-purp.png) no-repeat 94% 50%;
+      padding-right: 75px;
+      display: inline-block;
+      color: #2312be; }
+    .page_compet-tweek-bl-btm {
+      overflow: hidden;
+      margin-top: 35px; }
+      .page_compet-tweek-bl-btm span {
+        text-decoration: underline;
+        color: #2312be; }
+        .page_compet-tweek-bl-btm span:first-child {
+          float: left; }
+        .page_compet-tweek-bl-btm span:last-child {
+          float: right; }
+    .page_compet-tweek-bl:nth-child(5n+1) {
+      background: #2312be; }
+      .page_compet-tweek-bl:nth-child(5n+1) .page_compet-tweek-bl-date {
+        overflow: hidden; }
+        .page_compet-tweek-bl:nth-child(5n+1) .page_compet-tweek-bl-date:before {
+          background: #fff; }
+        .page_compet-tweek-bl:nth-child(5n+1) .page_compet-tweek-bl-date span {
+          color: #fff; }
+          .page_compet-tweek-bl:nth-child(5n+1) .page_compet-tweek-bl-date span:first-child {
+            background: #2312be; }
+          .page_compet-tweek-bl:nth-child(5n+1) .page_compet-tweek-bl-date span:last-child {
+            background: #2312be; }
+      .page_compet-tweek-bl:nth-child(5n+1) .page_compet-tweek-bl-ttl {
+        font-size: 24px;
+        color: #fff;
+        background: url(../img/arr.png) no-repeat 94% 50%; }
+      .page_compet-tweek-bl:nth-child(5n+1) .page_compet-tweek-bl-btm {
+        overflow: hidden;
+        margin-top: 35px; }
+        .page_compet-tweek-bl:nth-child(5n+1) .page_compet-tweek-bl-btm span {
+          text-decoration: underline;
+          color: #fff; }
+          .page_compet-tweek-bl:nth-child(5n+1) .page_compet-tweek-bl-btm span:first-child {
+            float: left; }
+          .page_compet-tweek-bl:nth-child(5n+1) .page_compet-tweek-bl-btm span:last-child {
+            float: right; }
+    .page_compet-tweek-bl:nth-child(5n+3) {
+      background: #000; }
+      .page_compet-tweek-bl:nth-child(5n+3) .page_compet-tweek-bl-date {
+        overflow: hidden; }
+        .page_compet-tweek-bl:nth-child(5n+3) .page_compet-tweek-bl-date:before {
+          background: #fff; }
+        .page_compet-tweek-bl:nth-child(5n+3) .page_compet-tweek-bl-date span {
+          color: #fff; }
+          .page_compet-tweek-bl:nth-child(5n+3) .page_compet-tweek-bl-date span:first-child {
+            background: #000; }
+          .page_compet-tweek-bl:nth-child(5n+3) .page_compet-tweek-bl-date span:last-child {
+            background: #000; }
+      .page_compet-tweek-bl:nth-child(5n+3) .page_compet-tweek-bl-ttl {
+        font-size: 24px;
+        color: #fff;
+        background: url(../img/arr.png) no-repeat 94% 50%; }
+      .page_compet-tweek-bl:nth-child(5n+3) .page_compet-tweek-bl-btm {
+        overflow: hidden;
+        margin-top: 35px; }
+        .page_compet-tweek-bl:nth-child(5n+3) .page_compet-tweek-bl-btm span {
+          text-decoration: underline;
+          color: #fff; }
+          .page_compet-tweek-bl:nth-child(5n+3) .page_compet-tweek-bl-btm span:first-child {
+            float: left; }
+          .page_compet-tweek-bl:nth-child(5n+3) .page_compet-tweek-bl-btm span:last-child {
+            float: right; }
+
+/*page_compet*/
+@media (min-width: 992px) and (max-width: 1600px) {
+  .page_compet-tweek-ttl {
+    padding-left: 15px; }
+  .page_compet-tweek-bl {
+    padding-left: 15px; } }
+@media (max-width: 767px) {
+  .page_compet {
+    padding-top: 64px; }
+    .page_compet-tweek-ttl {
+      font-size: 48px; }
+    .page_compet-tweek-sub_ttl {
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 20px; } }
 /*footer*/
 footer {
   background: #2413be;

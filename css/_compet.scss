@@ -1,0 +1,84 @@
+/*page_compet*/
+.page_compet {padding-top: 225px; padding-bottom: 50px;
+    &-tweek {
+        &-ttl { font-size: 86px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; }
+        &-sub_ttl { font-size: 36px;color: #2312be;padding-left: 30px; background: url(../img/arr-purp.png) no-repeat 94% 50%;
+    padding-right: 75px; display: inline-block;}
+        &-txt { font-size: 24px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 300; margin-top: 20px; }
+        &-date{color: #2312be;overflow: hidden; display: block;font-family: 'futurafuturisc', sans-serif; font-weight: 300;margin-bottom: 10px; position: relative; padding-left: 30px; margin-top: 10px; max-width: 320px;
+            span {
+                &:first-child {float: left;display: block;padding-right: 5px;}
+                &:last-child {float: right;display: block;padding-left: 5px;} 
+            }
+        }
+        &-bl { padding: 20px 0; padding-left: 160px; padding-right: 80px; 
+            &-date { overflow: hidden; position: relative;
+                &:before {content: '';display: block;position: absolute;top: 50%;height: 1px;width: 100%;background: #2312be;z-index: 0;}
+                span {z-index: 1; position: relative; color: #2312be;
+                    &:first-child { float: left;background: #fff;padding-right: 5px; } 
+                    &:last-child { float: right;background: #fff;padding-left: 5px; }                     
+                }
+            } 
+            &-ttl { font-size: 24px; background: url(../img/arr-purp.png) no-repeat 94% 50%; padding-right: 75px; display: inline-block; color: #2312be; } 
+            &-btm { overflow: hidden; margin-top: 35px; 
+                span { text-decoration: underline; color: #2312be;
+                    &:first-child { float: left; } 
+                    &:last-child { float: right; }                     
+                }
+            }
+            &:nth-child(5n+1) {background: #2312be;
+                .page_compet-tweek-bl{
+                    &-date { overflow: hidden;
+                        &:before {background: #fff;}
+                        span {color: #fff;
+                            &:first-child { background: #2312be; } 
+                            &:last-child { background: #2312be; }                     
+                        }
+                    } 
+                    &-ttl { font-size: 24px;color: #fff;background: url(../img/arr.png) no-repeat 94% 50%; } 
+                    &-btm { overflow: hidden; margin-top: 35px; 
+                        span { text-decoration: underline;color: #fff;
+                            &:first-child { float: left; } 
+                            &:last-child { float: right; }                     
+                        }
+                    }
+                }
+            }
+            &:nth-child(5n+3) { background: #000;
+                .page_compet-tweek-bl{
+                    &-date { overflow: hidden;
+                        &:before {background: #fff;}
+                        span {color: #fff;
+                            &:first-child { background: #000; } 
+                            &:last-child { background: #000; }                     
+                        }
+                    } 
+                    &-ttl { font-size: 24px;color: #fff;background: url(../img/arr.png) no-repeat 94% 50%; } 
+                    &-btm { overflow: hidden; margin-top: 35px; 
+                        span { text-decoration: underline;color: #fff;
+                            &:first-child { float: left; } 
+                            &:last-child { float: right; }                     
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+/*page_compet*/
+@media(min-width: 992px) and (max-width: 1600px){
+    .page_compet {
+        &-tweek {
+            &-ttl {padding-left: 15px;}          
+            &-bl {padding-left: 15px;}          
+        }
+    }
+}
+@media(max-width: 767px){
+    .page_compet { padding-top: 64px;
+        &-tweek {
+            &-ttl {font-size: 48px;}
+            &-sub_ttl {font-size: 16px;letter-spacing: 2px;margin-bottom: 20px;}           
+        }
+    } 
+}

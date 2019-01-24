@@ -47,7 +47,8 @@ img { max-width: 100%; height:auto; }
             &:before { content: ''; display: block; width: 100%; margin-bottom: -1.2em; } 
             &:after { content: ''; display: inline-block; width: 100%; } 
             li { display: inline-block; position: relative; top: 1.2em; 
-                a { color: #2312be; opacity: 1; @include trans(0.3s);
+                a { color: #2312be;border-bottom: 3px solid transparent; opacity: 1; @include trans(0.3s);
+                    &.active {border-bottom: 3px solid #2312be;}
                     &:hover, &:focus {text-decoration: none; opacity: 0.5; @include trans(0.3s);}
                 }
             }
@@ -128,6 +129,7 @@ header { padding: 40px 0;padding-left: 35px;background: #fff;position: fixed; le
 }
 
 @import "_index";
+@import "_compet";
  
 
 /*footer*/
