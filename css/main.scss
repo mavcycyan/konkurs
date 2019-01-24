@@ -58,6 +58,7 @@ img { max-width: 100%; height:auto; }
             &:hover, &:focus {cursor: pointer; box-shadow: none; outline: 0; opacity: 0.5; @include trans(0.3s);}
         }
     }
+    &-menu {display: none;}
     &-right { background: #2413be; position: absolute; width: 100%; top: 0; height: 200px; margin-top: -40px; padding-top: 76px; @include trans(0.3s);
         &-links { margin-right: 140px; float: right; 
             a { color: #fff; margin: 0 20px; text-transform: uppercase; }
@@ -95,9 +96,11 @@ header { padding: 40px 0;padding-left: 35px;background: #fff;position: fixed; le
     header {padding: 20px 0;background: #2413be;color: #fff;}
     .h {
         &-mob {display: block;
-            &-logo { color: #fff; text-align: center; display: block; max-width: 59px; margin: 0 auto; }
+            &-logo { color: #fff; text-align: center; display: block; max-width: 59px; margin: 8px auto 0; }
             &-btn { overflow: hidden;
-                button {float: right; background: none; border: 1px solid transparent; display: block; width: 100%; max-width: 81px;
+                button {float: right; background: none; border: 1px solid transparent; padding: 8px; display: block; width: 100%; max-width: 81px; border-radius: 6px;
+                    &:hover, &:focus {box-shadow:none; outline: 0;}
+                    &.active{border: 1px solid #fff;}
                     span { height: 1px; width: 100%; margin: 8px 0; background: #fff; display: block; 
                         &:first-child { margin-top: 0; } 
                         &:last-child { margin-bottom: 0; }
@@ -105,8 +108,18 @@ header { padding: 40px 0;padding-left: 35px;background: #fff;position: fixed; le
                 }    
             }
             &-srch {
-                button {background: url('../img/srch-mob-btn.png')no-repeat;background-size: 100% 100%;width: 17px;height: 18px;display: block; margin: 0 0;border: 0;opacity: 1; @include trans(0.3s);
+                button {background: url('../img/srch-mob-btn.png')no-repeat;background-size: 100% 100%;width: 17px;height: 18px;display: block; margin: 8px 0 0;border: 0;opacity: 1; @include trans(0.3s);
                     &:hover, &:focus {cursor: pointer; box-shadow: none; outline: 0; opacity: 0.5; @include trans(0.3s);}
+                }
+            }
+            &-menu {display: block;position: absolute;left: 0;top: 77px; background: #2413be; width: 100%; border-top: 1px solid #fff;padding-bottom: 30px;
+                &.hidden {display: none;}
+                ul {padding: 0;margin: 0;list-style: none;overflow-y: auto;
+                    li {width: 100%; padding: 0 15px;
+                        a {color: #fff;display: block; width: 100%; border: 1px solid #fff; border-radius: 6px; margin: 15px 0; padding: 12px 15px; text-align: center;
+                            &:hover, &:focus {text-decoration: none;color: #fff;}
+                        }
+                    }
                 }
             }
         }
@@ -130,7 +143,9 @@ footer { background: #2413be; color: #fff; padding-left: 35px;}
                     a { color: #2413be; text-transform: uppercase;  @include trans(0.3s);
                         &:hover, &:focus { color: #fff;text-decoration: none;  @include trans(0.3s);}
                     }
-                    .copy {color: #fff;}
+                    .copy {
+                        span {color: #fff;}
+                    }
                 }
             } 
         }     
@@ -165,7 +180,51 @@ footer { background: #2413be; color: #fff; padding-left: 35px;}
         &-ml { font-size: 20px; }        
     }
 }
+@media(min-width: 992px) and (max-width: 1199px){
+    footer { } 
+    .f{
+        &-soc {margin-top: 15px; margin-bottom: 15px;
+            a {font-size: 20px;}
+        }
+        &-ml { font-size: 16px;}        
+    }
+}
+@media(min-width: 768px){
+    footer { padding: 0;}
+    .f {
+        &-left { min-height: auto; text-align: center; }
+        &-right { margin: 0 -15px; 
+            &-btm {
+                ul { text-align: center; 
+                    li { margin:0 15px; margin-bottom: 15px; text-align: center; }
+                    .copy {min-width: 100%;} 
+                }
+            }
+        }
+        &-menu {
+            ul { text-align: center; 
+                li {margin:0 15px; margin-bottom: 15px; text-align: center; }
+            }
+        }
+    }
+}
 @media(max-width: 767px){
-    footer {display: none;}
+    footer { padding: 0;}
+    .f {
+        &-left { min-height: auto; text-align: center; }
+        &-right { margin: 0 -15px; 
+            &-btm {
+                ul { text-align: center; 
+                    li { margin:0 15px; margin-bottom: 15px; text-align: center; }
+                    .copy {min-width: 100%;} 
+                }
+            }
+        }
+        &-menu {
+            ul { text-align: center; 
+                li {margin:0 15px; margin-bottom: 15px; text-align: center; }
+            }
+        }
+    }
 }
 

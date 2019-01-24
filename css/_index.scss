@@ -30,9 +30,23 @@
         &-cont {padding-left: 5%;}
     }
 }
+@media(min-width: 992px) and (max-width: 1199px){
+    .main {
+        &-ttl {font-size: 44px;}
+    }
+}
+@media(min-width: 768px) and (max-width: 991px){
+    .main {
+        &-cont { padding-left: 5%; padding-bottom: 26vh; }
+        &-ttl { font-size: 46px; padding: 15% 0 10px;}
+        &-side { margin-top: 0; text-align: center;
+            &-bl { display: inline-block; width: 49%; }
+        }
+    }
+}
 @media(max-width: 767px){
     .main { padding-top: 64px;
-        &-cont { padding: 0 15px 17vh; min-height: calc(100vh - 64px); } 
+        &-cont { padding: 0 15px 42vh; min-height: calc(100vh - 64px); } 
         &-ttl { padding: 17vh 0 25px; font-size: 23px; } 
         &-scrl { max-width: 100%; } .main-side { margin-top: 0; }
     } 
@@ -64,8 +78,25 @@
         &-txt {padding-left: 15px;}
     }
 }
+@media(min-width: 768px){
+    .best {
+        &-ttl {font-size: 76px;}
+        &-btn {font-size: 16px;letter-spacing: 2px;margin-bottom: 20px;}
+        &-top{
+            &-ttl {padding-left: 0;}
+            &-txt {padding-left: 0;}
+        }
+    }
+}
 @media(max-width: 767px){
-    .best {display: none;}
+    .best {
+        &-ttl {font-size: 48px;}
+        &-btn {font-size: 16px;letter-spacing: 2px;margin-bottom: 20px;}
+        &-top{
+            &-ttl {padding-left: 0;}
+            &-txt {padding-left: 0;}
+        }
+    }
 }
 
 /*last_konk*/
@@ -110,8 +141,16 @@
         } 
     }
 }
+@media(min-width: 768px){
+    .last_konk {
+        &-ttl {font-size: 76px;}
+    }
+}
 @media(max-width: 767px){
-    .last_konk {display: none;}
+    .last_konk {
+        &-ttl {font-size: 48px;}
+        &-btn {font-size: 16px;letter-spacing: 2px;}
+    }
 }
 
 /*memb*/
@@ -147,7 +186,10 @@
     }
 }
 @media(max-width: 767px){
-    .memb {display: none;}
+    .memb {
+        &-ttl {font-size: 48px;}
+        &-btn {font-size: 16px;letter-spacing: 2px;}
+    }
 }
 
 /*battles*/
@@ -173,7 +215,7 @@
     }
     &-img {margin-top: 20px;margin-bottom: 77px;}
     &-right {padding: 0 15px;}
-    &-bl { display: block; position: relative; 
+    &-bl { display: block; position: relative; max-width: 480px;margin: 0 auto;
         &-img { display: block; } 
         &-num { display: block; position: absolute; top: 0; background: #000; color: #fff; width: 320px; height: 98px; font-size: 20px; font-family: 'futurafuturisc', sans-serif; font-weight: 300; padding: 12px 38px;
             span {font-family: 'futurademic', sans-serif;font-size: 24px;}
@@ -202,8 +244,29 @@
         } 
     }
 }
+@media(min-width: 768px) and (max-width: 991px){
+    .battles {max-width: 720px;margin: 0 auto;}
+}
+@media(min-width: 768px) and (max-width: 1199px){
+    .battles {
+        &-cont { padding-left: 0; } 
+        &-ttl { margin-bottom: 0; padding-left: 0;} 
+        &-btn { margin-bottom: 20px; } 
+        &-img { margin-bottom: 20px; } 
+        &-btm-txt { font-size: 20px; margin-bottom: 20px; } 
+    }
+}
 @media(max-width: 767px){
-    .battles {display: none;}
+    .battles {max-width: 540px;margin: 0 auto;
+        &-cont { padding-left: 0; } 
+        &-ttl { margin-bottom: 0; padding-left: 0;font-size: 48px; } 
+        &-btn { margin-bottom: 20px;margin-left: 0;font-size: 16px;letter-spacing: 2px; } 
+        &-img { margin-bottom: 20px; } 
+        &-btm-txt { font-size: 20px; margin-bottom: 20px; } 
+        &-bl { padding-top: 98px; 
+            &-num {width: 100%;}
+        }
+    }
 }
 
 /*learn*/
@@ -244,5 +307,9 @@
     }
 }
 @media(max-width: 767px){
-    .learn {display: none;}
+    .learn {
+        &-ttl {font-size: 48px;margin-bottom: 30px;}
+        &-btn {font-size: 16px;letter-spacing: 2px;margin-bottom: 20px;}
+        &-txt { font-size: 30px; margin-bottom: 20px; }
+    }
 }
