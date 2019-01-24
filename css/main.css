@@ -1261,7 +1261,7 @@ footer {
       font-size: 20px; }
   .f-ml {
     font-size: 16px; } }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   footer {
     padding: 0;
     overflow: hidden; }
@@ -1308,10 +1308,5 @@ footer {
       margin: 0 15px;
       margin-bottom: 15px;
       text-align: center; } }
-@media (min-width: 1200px) {
-  .f-right-btm ul {
-    text-align: left; }
-  .f-menu ul {
-    text-align: left; } }
 
 /*# sourceMappingURL=main.css.map */
