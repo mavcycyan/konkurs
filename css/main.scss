@@ -55,8 +55,17 @@ img { max-width: 100%; height:auto; }
         } 
     } 
     &-srch { margin-top: 10px;
-        button {background: url('../img/srch-btn.png')no-repeat;background-size: 100% 100%;width: 17px;height: 18px;display: block; margin: 0 auto;border: 0; opacity: 1; @include trans(0.3s);
+        &-btn {background: url('../img/srch-btn.png')no-repeat;background-size: 100% 100%;width: 17px;height: 18px;position: relative;display: block; margin: 0 auto;border: 0; opacity: 1; @include trans(0.3s);
             &:hover, &:focus {cursor: pointer; box-shadow: none; outline: 0; opacity: 0.5; @include trans(0.3s);}
+        }
+        &-cont {position: absolute;top: 0;right: 30px;padding: 10px 0; width: 41vw;background: #fff;display: none;z-index:99;
+            &.active {display: block;}
+            &-input { width: 100%; border: 0; color: #2312be; font-weight: 400; text-transform: uppercase; 
+                &:hover, &:focus {box-shadow: none; outline: 0;}
+            }
+            &-btn { border: 0; color: #2312be; font-weight: 400; text-transform: uppercase; position: absolute; right: 0; background: url('../img/btn-srch-smile.png')no-repeat 100% 50%; top: 0px; text-decoration: underline; padding: 10px 0;padding-right: 40px; 
+                &:hover, &:focus {box-shadow: none; outline: 0;}
+            }
         }
     }
     &-mob-menu {display: none;}
@@ -109,8 +118,17 @@ header { padding: 40px 0;padding-left: 35px;background: #fff;position: fixed; le
                 }    
             }
             &-srch {
-                button {background: url('../img/srch-mob-btn.png')no-repeat;background-size: 100% 100%;width: 17px;height: 18px;display: block; margin: 8px 0 0;border: 0;opacity: 1; @include trans(0.3s);
+                &-btn {background: url('../img/srch-mob-btn.png')no-repeat;background-size: 100% 100%;width: 17px;height: 18px;display: block; margin: 8px 0 0;border: 0;opacity: 1; @include trans(0.3s);
                     &:hover, &:focus {cursor: pointer; box-shadow: none; outline: 0; opacity: 0.5; @include trans(0.3s);}
+                }
+                &-cont {position: absolute; top: 0; left: 15px; padding: 10px 15px; width: 345px; background: #fff; display: none;z-index:99;
+                    &.active {display: block;}
+                    &-input { width: 100%; border: 0; color: #2312be; font-weight: 400; text-transform: uppercase; 
+                        &:hover, &:focus {box-shadow: none; outline: 0;}
+                    }
+                    &-btn { border: 0; color: #2312be; font-weight: 400; text-transform: uppercase; position: absolute; right: 0; background: url('../img/btn-srch-smile.png')no-repeat 100% 50%; top: 0px; text-decoration: underline; padding: 10px 0;padding-right: 40px; 
+                        &:hover, &:focus {box-shadow: none; outline: 0;}
+                    }
                 }
             }
             &-menu {display: block;position: absolute;left: 0;top: 77px; background: #2413be; width: 100%; border-top: 1px solid #fff;padding-bottom: 30px;
@@ -218,7 +236,7 @@ footer { background: #2413be; color: #fff; padding-left: 35px;}
             &-btm {
                 ul { text-align: center; 
                     li { margin:0 15px; margin-bottom: 15px; text-align: center; }
-                    .copy {min-width: 100%;} 
+                    .copy {min-width: 100%; margin: 0 0 15px;} 
                 }
             }
         }

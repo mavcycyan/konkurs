@@ -98,11 +98,12 @@ img {
           -ms-transition: 0.3s; }
 .h-srch {
   margin-top: 10px; }
-  .h-srch button {
+  .h-srch-btn {
     background: url("../img/srch-btn.png") no-repeat;
     background-size: 100% 100%;
     width: 17px;
     height: 18px;
+    position: relative;
     display: block;
     margin: 0 auto;
     border: 0;
@@ -112,7 +113,7 @@ img {
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
     -ms-transition: 0.3s; }
-    .h-srch button:hover, .h-srch button:focus {
+    .h-srch-btn:hover, .h-srch-btn:focus {
       cursor: pointer;
       box-shadow: none;
       outline: 0;
@@ -122,6 +123,41 @@ img {
       -moz-transition: 0.3s;
       -o-transition: 0.3s;
       -ms-transition: 0.3s; }
+  .h-srch-cont {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    padding: 10px 0;
+    width: 41vw;
+    background: #fff;
+    display: none;
+    z-index: 99; }
+    .h-srch-cont.active {
+      display: block; }
+    .h-srch-cont-input {
+      width: 100%;
+      border: 0;
+      color: #2312be;
+      font-weight: 400;
+      text-transform: uppercase; }
+      .h-srch-cont-input:hover, .h-srch-cont-input:focus {
+        box-shadow: none;
+        outline: 0; }
+    .h-srch-cont-btn {
+      border: 0;
+      color: #2312be;
+      font-weight: 400;
+      text-transform: uppercase;
+      position: absolute;
+      right: 0;
+      background: url("../img/btn-srch-smile.png") no-repeat 100% 50%;
+      top: 0px;
+      text-decoration: underline;
+      padding: 10px 0;
+      padding-right: 40px; }
+      .h-srch-cont-btn:hover, .h-srch-cont-btn:focus {
+        box-shadow: none;
+        outline: 0; }
 .h-mob-menu {
   display: none; }
 .h-right {
@@ -229,7 +265,7 @@ header {
             margin-top: 0; }
           .h-mob-btn button span:last-child {
             margin-bottom: 0; }
-    .h-mob-srch button {
+    .h-mob-srch-btn {
       background: url("../img/srch-mob-btn.png") no-repeat;
       background-size: 100% 100%;
       width: 17px;
@@ -243,7 +279,7 @@ header {
       -moz-transition: 0.3s;
       -o-transition: 0.3s;
       -ms-transition: 0.3s; }
-      .h-mob-srch button:hover, .h-mob-srch button:focus {
+      .h-mob-srch-btn:hover, .h-mob-srch-btn:focus {
         cursor: pointer;
         box-shadow: none;
         outline: 0;
@@ -253,6 +289,41 @@ header {
         -moz-transition: 0.3s;
         -o-transition: 0.3s;
         -ms-transition: 0.3s; }
+    .h-mob-srch-cont {
+      position: absolute;
+      top: 0;
+      left: 15px;
+      padding: 10px 15px;
+      width: 345px;
+      background: #fff;
+      display: none;
+      z-index: 99; }
+      .h-mob-srch-cont.active {
+        display: block; }
+      .h-mob-srch-cont-input {
+        width: 100%;
+        border: 0;
+        color: #2312be;
+        font-weight: 400;
+        text-transform: uppercase; }
+        .h-mob-srch-cont-input:hover, .h-mob-srch-cont-input:focus {
+          box-shadow: none;
+          outline: 0; }
+      .h-mob-srch-cont-btn {
+        border: 0;
+        color: #2312be;
+        font-weight: 400;
+        text-transform: uppercase;
+        position: absolute;
+        right: 0;
+        background: url("../img/btn-srch-smile.png") no-repeat 100% 50%;
+        top: 0px;
+        text-decoration: underline;
+        padding: 10px 0;
+        padding-right: 40px; }
+        .h-mob-srch-cont-btn:hover, .h-mob-srch-cont-btn:focus {
+          box-shadow: none;
+          outline: 0; }
     .h-mob-menu {
       display: block;
       position: absolute;
@@ -340,7 +411,12 @@ header {
       background: #fff;
       text-align: center;
       padding: 29px 0 18px; }
-      .main-side-top a {
+      .main-side-top-cont {
+        display: none; }
+        .main-side-top-cont.active {
+          display: block; }
+      .main-side-top a, .main-side-top span {
+        cursor: pointer;
         color: #2312be;
         font-size: 30px;
         border-bottom: 6px solid #fff;
@@ -353,7 +429,7 @@ header {
         -o-transition: 0.3s;
         -ms-transition: 0.3s;
         margin: 0 5px; }
-        .main-side-top a:hover, .main-side-top a:focus {
+        .main-side-top a:hover, .main-side-top a:focus, .main-side-top span:hover, .main-side-top span:focus {
           text-decoration: none;
           opacity: 0.5;
           transition: 0.3s;
@@ -361,7 +437,7 @@ header {
           -moz-transition: 0.3s;
           -o-transition: 0.3s;
           -ms-transition: 0.3s; }
-        .main-side-top a.active {
+        .main-side-top a.active, .main-side-top span.active {
           border-bottom: 6px solid #2312be; }
     .main-side-bl {
       display: block;
@@ -552,7 +628,10 @@ header {
   .best-top-ttl {
     padding-left: 0; }
   .best-top-txt {
-    padding-left: 0; } }
+    padding-left: 0; }
+  .best-bl-num {
+    padding: 17px 0;
+    padding-left: 20px; } }
 /*last_konk*/
 .last_konk {
   padding: 100px 0 50px; }
@@ -1458,7 +1537,8 @@ footer {
         margin-bottom: 15px;
         text-align: center; }
       .f-right-btm ul .copy {
-        min-width: 100%; }
+        min-width: 100%;
+        margin: 0 0 15px; }
   .f-menu ul {
     text-align: center; }
     .f-menu ul li {

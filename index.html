@@ -50,7 +50,11 @@
                 </div>
                 <div class="col-12 col-md-1 col-lg-1 order-md-3 order-lg-3">
                     <div class="h-srch">
-                        <button></button>
+                        <button class="h-srch-btn"></button>
+                        <div class="h-srch-cont">
+                            <input type="text" placeholder="Что ищем ?" class="h-srch-cont-input" />
+                            <button class="h-srch-cont-btn">Найти</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-5 order-md-2 order-lg-4">
@@ -69,7 +73,11 @@
             <div class="row">
                 <div class="col-4">
                     <div class="h-mob-srch">
-                        <button></button>
+                        <button class="h-mob-srch-btn"></button>
+                        <div class="h-mob-srch-cont">
+                            <input type="text" placeholder="Что ищем ?" class="h-mob-srch-cont-input" />
+                            <button class="h-mob-srch-cont-btn">Найти</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-4">
@@ -113,25 +121,45 @@
                 <div class="col-12 col-lg-3">
                     <div class="main-side">
                        <div class="main-side-top">
-                           <a href="#" class="active">Конкурсы</a>
-                           <a href="#">Баттлы</a>
+                           <span class="active" data-for="tab1">Конкурсы</span>
+                           <span data-for="tab2">Баттлы</span>
                        </div>
-                        <a href="#" class="main-side-bl">
-                            <span class="main-side-bl-img"><img src="img/main-side1.jpg" alt=""></span>
-                            <span class="main-side-bl-ttl">Название батла</span>
-                        </a>
-                        <a href="#" class="main-side-bl">
-                            <span class="main-side-bl-img"><img src="img/main-side2.jpg" alt=""></span>
-                            <span class="main-side-bl-ttl">Название батла</span>
-                        </a>
-                        <a href="#" class="main-side-bl">
-                            <span class="main-side-bl-img"><img src="img/main-side3.jpg" alt=""></span>
-                            <span class="main-side-bl-ttl">Название батла</span>
-                        </a>
-                        <a href="#" class="main-side-bl">
-                            <span class="main-side-bl-img"><img src="img/main-side4.jpg" alt=""></span>
-                            <span class="main-side-bl-ttl">Название батла</span>
-                        </a>
+                       <div id="tab1" class="main-side-top-cont active" >
+                            <a href="#" class="main-side-bl">
+                                <span class="main-side-bl-img"><img src="img/main-side1.jpg" alt=""></span>
+                                <span class="main-side-bl-ttl">Название батла</span>
+                            </a>
+                            <a href="#" class="main-side-bl">
+                                <span class="main-side-bl-img"><img src="img/main-side2.jpg" alt=""></span>
+                                <span class="main-side-bl-ttl">Название батла</span>
+                            </a>
+                            <a href="#" class="main-side-bl">
+                                <span class="main-side-bl-img"><img src="img/main-side3.jpg" alt=""></span>
+                                <span class="main-side-bl-ttl">Название батла</span>
+                            </a>
+                            <a href="#" class="main-side-bl">
+                                <span class="main-side-bl-img"><img src="img/main-side4.jpg" alt=""></span>
+                                <span class="main-side-bl-ttl">Название батла</span>
+                            </a>
+                       </div>
+                       <div id="tab2" class="main-side-top-cont">
+                            <a href="#" class="main-side-bl">
+                                <span class="main-side-bl-img"><img src="img/main-side2.jpg" alt=""></span>
+                                <span class="main-side-bl-ttl">Название батла</span>
+                            </a>
+                            <a href="#" class="main-side-bl">
+                                <span class="main-side-bl-img"><img src="img/main-side4.jpg" alt=""></span>
+                                <span class="main-side-bl-ttl">Название батла</span>
+                            </a>
+                            <a href="#" class="main-side-bl">
+                                <span class="main-side-bl-img"><img src="img/main-side3.jpg" alt=""></span>
+                                <span class="main-side-bl-ttl">Название батла</span>
+                            </a>
+                            <a href="#" class="main-side-bl">
+                                <span class="main-side-bl-img"><img src="img/main-side1.jpg" alt=""></span>
+                                <span class="main-side-bl-ttl">Название батла</span>
+                            </a>
+                       </div>
                     </div>
                 </div>
             </div>
@@ -495,6 +523,17 @@ $(window).on('load resize scroll', function(){
         $('header').removeClass('fixed');
     }
 })    
+</script>
+
+<script>
+    var datFor;
+    $('.main-side-top span').click(function(){
+        $('.main-side-top span').removeClass('active');
+        $(this).addClass('active');
+        datFor = $(this).attr('data-for');
+        $('.main-side-top-cont').removeClass('active');
+        $('#'+datFor).addClass('active');
+    });
 </script>
 <script src="js/main.js"></script>
 
