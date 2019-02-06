@@ -12,6 +12,8 @@
 	<link rel="canonical" href="">
 	<title>Goawa</title> 
 
+    <link rel="stylesheet" href="css/lightslider.css" type="text/css" />   
+    <link rel="stylesheet" href="css/fullpage.css" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="css/main.css" rel="stylesheet">
 	
@@ -20,6 +22,13 @@
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->	
 
+    <link rel="stylesheet" href="frames/wow/css/libs/animate.css">
+    <link rel="stylesheet" href="frames/wow/css/site.css">
+    <style>
+      .wow:first-child {
+        visibility: hidden;
+      }
+    </style>
 	
 	<link rel="ICON" href="favicon.ico" />
 
@@ -106,14 +115,16 @@
 </div>
 </header>
         
-<div class="wrapper">
-   <div class="main">
+<div class="wrapper" id="fullpage">
+   <div class="main section">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-9">
                     <div class="main-cont">
                         <div class="main-ttl">Давно выяснено, что при оценке <br>дизайна и композиции читаемый <br>текст мешает сосредоточиться. </div>
-                        <a href="#" class="main-btn">Зарегистрироваться</a>
+                        <a href="#" class="main-btn">
+                            <span>Зарегистрироваться</span>
+                        </a>
                         <a href="#best" class="main-scrl">Scroll</a>
                     </div>
                     <div id="best"></div>
@@ -165,18 +176,37 @@
             </div>
         </div>
    </div>
-   <div class="best">
+   <div class="best section">
        <div class="container">
            <div class="row">
                <div class="col-12 col-lg-6">
-                   <div class="best-ttl">Лучшие работы недели</div>
-                   <div class="best-txt">Работы, заслуживающие признания компетентного жюри</div>
-                   <a href="#" class="best-btn">Смотреть все работы</a>
+                   <div class="best-ttl wow fadeInLeft">Лучшие работы недели</div>
+                   <div class="best-txt wow fadeInLeft">Работы, заслуживающие признания компетентного жюри</div>
+                   <a href="#" class="best-btn wow fadeInLeft"><span>Смотреть все работы</span></a>
                </div>
                <div class="col-12 col-lg-6">
                   <div class="best-top-ttl">Witeil ico klein - Jiha</div>
                   <div class="best-top-txt">Mark Lehman</div>
-                   <div class="best-img"><img src="img/best-img.jpg" alt=""></div>
+                   <div class="best-img">
+                       <ul>
+                           <li>
+                               <img src="img/best-img.jpg" alt="">
+                               <span><img src="img/best-img_overl.png" alt=""></span>
+                           </li>
+                           <li>
+                               <img src="img/best-img.jpg" alt="">
+                               <span><img src="img/best-img_overl1.png" alt=""></span>
+                           </li>
+                           <li>
+                               <img src="img/best-img.jpg" alt="">
+                               <span><img src="img/best-img_overl.png" alt=""></span>
+                           </li>
+                           <li>
+                               <img src="img/best-img.jpg" alt="">
+                               <span><img src="img/best-img_overl.png" alt=""></span>
+                           </li>
+                       </ul>
+                   </div>
                </div>
            </div>
        </div>
@@ -206,156 +236,158 @@
            </div>
        </div>
    </div>
-   <div class="last_konk">
-       <div class="container">
-           <div class="row">
-               <div class="col-12 col-lg-6">
-                   <div class="last_konk-ttl">Последние конкурсы</div>
+   <div class="section">
+       <div class="last_konk">
+           <div class="container">
+               <div class="row">
+                   <div class="col-12 col-lg-6">
+                       <div class="last_konk-ttl wow fadeInLeft">Последние конкурсы</div>
+                   </div>
+                   <div class="col-12 col-lg-6">
+                       <a href="compet.html" class="last_konk-btn wow fadeInLeft"><span>Все конкурсы</span></a>
+                   </div>
                </div>
-               <div class="col-12 col-lg-6">
-                   <a href="compet.html" class="last_konk-btn">Все конкурсы</a>
+           </div>
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="col-12 col-md-6 col-lg-3">
+                       <a href="#" class="last_konk-bl">
+                           <span class="last_konk-bl-top">
+                               <span class="last_konk-bl-top-left">17.03.2018</span>
+                               <span class="last_konk-bl-top-right">21.03.2018</span>
+                           </span>
+                           <span class="last_konk-bl-img">
+                               <span class="last_konk-bl-num">
+                                   <span>Photoshop</span><br>
+                                   364
+                               </span>
+                               <img src="img/konk.jpg" alt="">
+                               <span class="last_konk-bl-ttl">Knitted Camouflage</span>
+                               <span class="last_konk-bl-side"><span>Nike</span></span>
+                           </span>
+                       </a>
+                   </div>
+                   <div class="col-12 col-md-6 col-lg-3">
+                       <a href="#" class="last_konk-bl">
+                           <span class="last_konk-bl-top">
+                               <span class="last_konk-bl-top-left">17.03.2018</span>
+                               <span class="last_konk-bl-top-right">21.03.2018</span>
+                           </span>
+                           <span class="last_konk-bl-img">
+                               <span class="last_konk-bl-num">
+                                   <span>Photoshop</span><br>
+                                   364
+                               </span>
+                               <img src="img/konk.jpg" alt="">
+                               <span class="last_konk-bl-ttl">Knitted Camouflage</span>
+                               <span class="last_konk-bl-side"><span>Nike</span></span>
+                           </span>
+                       </a>
+                   </div>
+                   <div class="col-12 col-md-6 col-lg-3">
+                       <a href="#" class="last_konk-bl">
+                           <span class="last_konk-bl-top">
+                               <span class="last_konk-bl-top-left">17.03.2018</span>
+                               <span class="last_konk-bl-top-right">21.03.2018</span>
+                           </span>
+                           <span class="last_konk-bl-img">
+                               <span class="last_konk-bl-num">
+                                   <span>Photoshop</span><br>
+                                   364
+                               </span>
+                               <img src="img/konk.jpg" alt="">
+                               <span class="last_konk-bl-ttl">Knitted Camouflage</span>
+                               <span class="last_konk-bl-side"><span>Nike</span></span>
+                           </span>
+                       </a>
+                   </div>
+                   <div class="col-12 col-md-6 col-lg-3">
+                       <a href="#" class="last_konk-bl">
+                           <span class="last_konk-bl-top">
+                               <span class="last_konk-bl-top-left">17.03.2018</span>
+                               <span class="last_konk-bl-top-right">21.03.2018</span>
+                           </span>
+                           <span class="last_konk-bl-img">
+                               <span class="last_konk-bl-num">
+                                   <span>Photoshop</span><br>
+                                   364
+                               </span>
+                               <img src="img/konk.jpg" alt="">
+                               <span class="last_konk-bl-ttl">Knitted Camouflage</span>
+                               <span class="last_konk-bl-side"><span>Nike</span></span>
+                           </span>
+                       </a>
+                   </div>
                </div>
            </div>
        </div>
-       <div class="container-fluid">
-           <div class="row">
-               <div class="col-12 col-md-6 col-lg-3">
-                   <a href="#" class="last_konk-bl">
-                       <span class="last_konk-bl-top">
-                           <span class="last_konk-bl-top-left">17.03.2018</span>
-                           <span class="last_konk-bl-top-right">21.03.2018</span>
-                       </span>
-                       <span class="last_konk-bl-img">
-                           <span class="last_konk-bl-num">
-                               <span>Photoshop</span><br>
-                               364
-                           </span>
-                           <img src="img/konk.jpg" alt="">
-                           <span class="last_konk-bl-ttl">Knitted Camouflage</span>
-                           <span class="last_konk-bl-side"><span>Nike</span></span>
-                       </span>
-                   </a>
-               </div>
-               <div class="col-12 col-md-6 col-lg-3">
-                   <a href="#" class="last_konk-bl">
-                       <span class="last_konk-bl-top">
-                           <span class="last_konk-bl-top-left">17.03.2018</span>
-                           <span class="last_konk-bl-top-right">21.03.2018</span>
-                       </span>
-                       <span class="last_konk-bl-img">
-                           <span class="last_konk-bl-num">
-                               <span>Photoshop</span><br>
-                               364
-                           </span>
-                           <img src="img/konk.jpg" alt="">
-                           <span class="last_konk-bl-ttl">Knitted Camouflage</span>
-                           <span class="last_konk-bl-side"><span>Nike</span></span>
-                       </span>
-                   </a>
-               </div>
-               <div class="col-12 col-md-6 col-lg-3">
-                   <a href="#" class="last_konk-bl">
-                       <span class="last_konk-bl-top">
-                           <span class="last_konk-bl-top-left">17.03.2018</span>
-                           <span class="last_konk-bl-top-right">21.03.2018</span>
-                       </span>
-                       <span class="last_konk-bl-img">
-                           <span class="last_konk-bl-num">
-                               <span>Photoshop</span><br>
-                               364
-                           </span>
-                           <img src="img/konk.jpg" alt="">
-                           <span class="last_konk-bl-ttl">Knitted Camouflage</span>
-                           <span class="last_konk-bl-side"><span>Nike</span></span>
-                       </span>
-                   </a>
-               </div>
-               <div class="col-12 col-md-6 col-lg-3">
-                   <a href="#" class="last_konk-bl">
-                       <span class="last_konk-bl-top">
-                           <span class="last_konk-bl-top-left">17.03.2018</span>
-                           <span class="last_konk-bl-top-right">21.03.2018</span>
-                       </span>
-                       <span class="last_konk-bl-img">
-                           <span class="last_konk-bl-num">
-                               <span>Photoshop</span><br>
-                               364
-                           </span>
-                           <img src="img/konk.jpg" alt="">
-                           <span class="last_konk-bl-ttl">Knitted Camouflage</span>
-                           <span class="last_konk-bl-side"><span>Nike</span></span>
-                       </span>
-                   </a>
+       <div class="memb">
+           <div class="container">
+               <div class="row">
+                   <div class="col-12 col-lg-6">
+                       <div class="memb-ttl wow fadeInLeft">Топ участников</div>
+                   </div>
+                   <div class="col-12 col-lg-6">
+                       <a href="#" class="memb-btn wow fadeInLeft"><span>Все участники</span></a>
+                   </div>
                </div>
            </div>
-       </div>
+           <div class="container-fluid">
+               <div class="row">
+                   <div class="col-12 col-sm-4 col-lg-2">
+                       <a href="#" class="memb-bl">
+                           <span class="memb-bl-ttl">Андрей<br>Иванченко</span>
+                           <span class="memb-bl-img"><img src="img/memb1.jpg" alt=""></span>
+                           <span class="memb-bl-txt">UI/UX, visual design</span>
+                       </a>
+                   </div>
+                   <div class="col-12 col-sm-4 col-lg-2">
+                       <a href="#" class="memb-bl">
+                           <span class="memb-bl-ttl">Андрей<br>Иванченко</span>
+                           <span class="memb-bl-img"><img src="img/memb2.jpg" alt=""></span>
+                           <span class="memb-bl-txt">UI/UX, visual design</span>
+                       </a>
+                   </div>
+                   <div class="col-12 col-sm-4 col-lg-2">
+                       <a href="#" class="memb-bl">
+                           <span class="memb-bl-ttl">Андрей<br>Иванченко</span>
+                           <span class="memb-bl-img"><img src="img/memb3.jpg" alt=""></span>
+                           <span class="memb-bl-txt">UI/UX, visual design</span>
+                       </a>
+                   </div>
+                   <div class="col-12 col-sm-4 col-lg-2">
+                       <a href="#" class="memb-bl">
+                           <span class="memb-bl-ttl">Андрей<br>Иванченко</span>
+                           <span class="memb-bl-img"><img src="img/memb4.jpg" alt=""></span>
+                           <span class="memb-bl-txt">UI/UX, visual design</span>
+                       </a>
+                   </div>
+                   <div class="col-12 col-sm-4 col-lg-2">
+                       <a href="#" class="memb-bl">
+                           <span class="memb-bl-ttl">Андрей<br>Иванченко</span>
+                           <span class="memb-bl-img"><img src="img/memb5.jpg" alt=""></span>
+                           <span class="memb-bl-txt">UI/UX, visual design</span>
+                       </a>
+                   </div>
+                   <div class="col-12 col-sm-4 col-lg-2">
+                       <a href="#" class="memb-bl">
+                           <span class="memb-bl-ttl">Андрей<br>Иванченко</span>
+                           <span class="memb-bl-img"><img src="img/memb6.jpg" alt=""></span>
+                           <span class="memb-bl-txt">UI/UX, visual design</span>
+                       </a>
+                   </div>
+               </div>
+           </div>
+       </div> 
    </div>
-   <div class="memb">
-       <div class="container">
-           <div class="row">
-               <div class="col-12 col-lg-6">
-                   <div class="memb-ttl">Топ участников</div>
-               </div>
-               <div class="col-12 col-lg-6">
-                   <a href="#" class="memb-btn">Все участники</a>
-               </div>
-           </div>
-       </div>
-       <div class="container-fluid">
-           <div class="row">
-               <div class="col-12 col-sm-4 col-lg-2">
-                   <a href="#" class="memb-bl">
-                       <span class="memb-bl-ttl">Андрей<br>Иванченко</span>
-                       <span class="memb-bl-img"><img src="img/memb1.jpg" alt=""></span>
-                       <span class="memb-bl-txt">UI/UX, visual design</span>
-                   </a>
-               </div>
-               <div class="col-12 col-sm-4 col-lg-2">
-                   <a href="#" class="memb-bl">
-                       <span class="memb-bl-ttl">Андрей<br>Иванченко</span>
-                       <span class="memb-bl-img"><img src="img/memb2.jpg" alt=""></span>
-                       <span class="memb-bl-txt">UI/UX, visual design</span>
-                   </a>
-               </div>
-               <div class="col-12 col-sm-4 col-lg-2">
-                   <a href="#" class="memb-bl">
-                       <span class="memb-bl-ttl">Андрей<br>Иванченко</span>
-                       <span class="memb-bl-img"><img src="img/memb3.jpg" alt=""></span>
-                       <span class="memb-bl-txt">UI/UX, visual design</span>
-                   </a>
-               </div>
-               <div class="col-12 col-sm-4 col-lg-2">
-                   <a href="#" class="memb-bl">
-                       <span class="memb-bl-ttl">Андрей<br>Иванченко</span>
-                       <span class="memb-bl-img"><img src="img/memb4.jpg" alt=""></span>
-                       <span class="memb-bl-txt">UI/UX, visual design</span>
-                   </a>
-               </div>
-               <div class="col-12 col-sm-4 col-lg-2">
-                   <a href="#" class="memb-bl">
-                       <span class="memb-bl-ttl">Андрей<br>Иванченко</span>
-                       <span class="memb-bl-img"><img src="img/memb5.jpg" alt=""></span>
-                       <span class="memb-bl-txt">UI/UX, visual design</span>
-                   </a>
-               </div>
-               <div class="col-12 col-sm-4 col-lg-2">
-                   <a href="#" class="memb-bl">
-                       <span class="memb-bl-ttl">Андрей<br>Иванченко</span>
-                       <span class="memb-bl-img"><img src="img/memb6.jpg" alt=""></span>
-                       <span class="memb-bl-txt">UI/UX, visual design</span>
-                   </a>
-               </div>
-           </div>
-       </div>
-   </div> 
-   <div class="battles">
+   <div class="battles section">
        <div class="container-fluid">
            <div class="row">
                <div class="col-12 col-lg-6">
                    <div class="battles-ttl">Баттлы</div>
                </div>
                <div class="col-12 col-lg-6">
-                   <a href="#" class="battles-btn">Все баттлы</a>
+                   <a href="#" class="battles-btn"><span>Все баттлы</span></a>
                </div>
                <div class="col-12 col-lg-6">
                   <div class="battles-cont">
@@ -402,14 +434,14 @@
            </div>
        </div>
    </div>  
-   <div class="learn">
+   <div class="learn section">
        <div class="container">
            <div class="row">
                <div class="col-12 col-lg-6">
                    <div class="learn-ttl">Обучающий материал</div>
                </div>
                <div class="col-12 col-lg-6">
-                   <a href="#" class="learn-btn">Все курсы</a>
+                   <a href="#" class="learn-btn"><span>Все курсы</span></a>
                </div>
                <div class="col-12 col-lg-6"></div>
                <div class="col-12 col-lg-6">
@@ -535,6 +567,145 @@ $(window).on('load resize scroll', function(){
         $('#'+datFor).addClass('active');
     });
 </script>
+
+
+<script type="text/javascript" src="js/fullpage.js"></script>
+
+<script>  
+    function hideShowTopMenu(){
+        if($('body').attr('class') == 'fp-viewing-main') {
+            $('header').removeClass('fixed');
+        }
+        else {
+            $('header').addClass('fixed');
+        }
+    
+    }    
+    
+if($(window).width() > 1199){
+    var myFullpage = new fullpage('#fullpage', {
+        //Навигация
+        menu: '#left-menu',
+        lockAnchors: false,
+        anchors:['main', 'second', 'third', 'fourth', 'fifth', 'partn', 'footer'],
+        navigationTooltips: ['main', 'second', 'third', 'fourth', 'fifth', 'partn', 'footer'],
+        showActiveTooltip: false,
+        slidesNavigation: false,
+        slidesNavPosition: 'bottom',
+
+        //Скроллинг
+        css3: true,
+        scrollingSpeed: 700,
+        autoScrolling: true,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: true,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        continuousHorizontal: false,
+        scrollHorizontally: false,
+        interlockedSlides: false,
+        dragAndMove: false,
+        offsetSections: false,
+        resetSliders: false,
+        fadingEffect: false,
+        normalScrollElements: '#element1, .element2',
+        scrollOverflow: false,
+        scrollOverflowReset: false,
+        scrollOverflowOptions: null,
+        touchSensitivity: 15,
+        normalScrollElementTouchThreshold: 5,
+        bigSectionsDestination: null,
+
+        //Доступ
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
+
+        //Дизайн
+        controlArrows: true,
+        verticalCentered: true,
+        responsiveWidth: 0,
+        responsiveHeight: 0,
+        responsiveSlides: false,
+        parallax: false,
+        parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+        //Настроить селекторы
+        sectionSelector: '.section',
+
+        lazyLoading: true,
+
+        //события
+        onLeave: function(origin, destination, direction){},
+        afterLoad: function(origin, destination, direction){
+            hideShowTopMenu();
+        },
+        afterRender: function(){},
+        afterResize: function(width, height){},
+        afterResponsive: function(isResponsive){},
+        afterSlideLoad: function(section, origin, destination, direction){},
+        onSlideLeave: function(section, origin, destination, direction){}
+    });
+}    
+</script>
+
+<script src="frames/wow/dist/wow.js"></script>
+<script>
+  wow = new WOW(
+    {
+      animateClass: 'animated',
+      offset:       100,
+      callback:     function(box) {
+        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+      }
+    }
+  );
+  wow.init();
+</script>
+
+<script type="text/javascript" src="js/lightslider.min.js"></script>
+<script>
+$(document).ready(function() {	
+    var curEl;
+    $('.best-img ul').lightSlider({
+        item:1,
+        auto:false,
+        mode: 'fade',
+        loop:false,
+        pause: 4000,
+        speed:2000,
+        controls:false,
+        enableDrag:false,
+        enableTouch:false,
+        freeMove:false,
+        pager:true, 
+        onSliderLoad: function() {
+                $('.best-img ul').removeClass('cS-hidden');
+        },
+        onBeforeSlide: function(el) {
+            curEl = el.children('.active');
+            el.children('.active').addClass('go_left');
+        },
+        onAfterSlide: function(el) {
+            curEl.removeClass('go_left');
+        },
+        responsive : [
+        {
+            breakpoint:991, 
+                settings: {item:1}
+        }
+        ]
+
+        });
+
+});
+</script>
+
 <script src="js/main.js"></script>
 
 </body>
