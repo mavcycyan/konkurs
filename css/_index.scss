@@ -66,9 +66,12 @@
         &-scrl { max-width: 100%; } .main-side { margin-top: 0; }
     } 
 }
+@media(min-width: 1200px) and (max-width: 1600px){
+    .main-cont { padding-left: 25%; }
+} 
 
 /*best*/
-.best{ padding: 100px 0 0;
+.best{ /*padding: 100px 0 0;*/
     &-ttl { font-size: 86px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; }
     &-txt { font-size: 24px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 300; margin-top: 20px; }
     &-btn {display: block; max-width: 400px;letter-spacing: 3px;text-transform: uppercase;text-align: center; margin-top: 60px; position: relative;
@@ -83,7 +86,7 @@
         &-ttl {font-size: 36px;color: #2312be;padding-left: 30px;}
         &-txt {color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 300;text-decoration: underline;padding-left: 30px;}
     }
-    &-img {margin-top: 10px;margin-bottom: 0; margin-left: 192px;max-width: 608px;
+    &-img {margin-top: 10px;margin-bottom: 0; margin-left: 92px;max-width: 708px;
         ul {
             li { position: relative;
                 &.go_left {z-index: 100;
@@ -118,7 +121,7 @@
         &-txt {padding-left: 15px;}
     }
 }
-@media(min-width: 768px){
+@media(min-width: 768px) and (max-width: 991px){
     .best {
         &-ttl {font-size: 76px;font-size: 7vmin;}
         &-btn {font-size: 16px;letter-spacing: 2px;margin-bottom: 20px;}
@@ -141,9 +144,14 @@
         }
     }
 }
+@media(min-width: 1200px) and (max-width: 1600px){
+    .best {
+        &-ttl {font-size: 7vmin;}
+    }
+} 
 
 /*last_konk*/
-.last_konk{ padding: 3vh 0;
+.last_konk{ padding: 0 0 3vh;
     .col-12 {padding: 0 15px;}
     &-ttl { font-size: 86px;font-size: 7vmin; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; margin-bottom: 2vh; }
     &-btn {display: block; max-width: 400px;letter-spacing: 3px;text-transform: uppercase;text-align: center; margin-top: 24px; margin-bottom: 2vh;position: relative;
@@ -159,7 +167,7 @@
         &-txt {color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 300;text-decoration: underline;padding-left: 30px;}
     }
     &-img {margin-top: 20px;margin-bottom: 77px;}
-    &-bl { max-width: 402px; margin: 0 auto; position: relative; display: block; color: #fff;overflow: hidden; opacity: 1; @include trans(0.3s);
+    &-bl { max-width: 402px; margin: 0 auto; position: relative; display: block; color: #fff;overflow: hidden; 
         &-top{color: #2312be;overflow: hidden; display: block;font-family: 'futurafuturisc', sans-serif; font-weight: 300;margin-bottom: 10px; position: relative;
             &:before { content: ''; background: #2312be; width: 100%; height: 1px; display: block; top: 50%; position: absolute; z-index: -1; }
             &-left {float: left;display: block;background: #fff; padding-right: 5px;}
@@ -173,7 +181,7 @@
         &-side { display: block; height: 100%; width: 82px; position: absolute; left: 0; bottom: 0; background: #fff;
             span {color: #2312be; text-decoration: underline; position: absolute; bottom: 25px; left: 0; transform: rotate(-90deg);}
         }
-        &:hover, &:focus {text-decoration: none;color: #fff;opacity: 0.5; @include trans(0.3s);}
+        &:hover, &:focus {text-decoration: none;color: #fff;}
     } 
 }
 /*last_konk*/
@@ -189,7 +197,7 @@
         } 
     }
 }
-@media(min-width: 768px){
+@media(min-width: 768px) and (max-width: 991px){
     .last_konk {
         &-ttl {font-size: 76px;}
     }
@@ -200,9 +208,19 @@
         &-btn {font-size: 16px;letter-spacing: 2px;}
     }
 }
+@media(min-width: 1200px) and (max-width: 1600px){
+    .last_konk {
+        &-btn {margin-top: 0;}
+        &-bl { max-width: 179px; 
+            &-num { font-size: 19px; width: 61%; padding: 5% 5%; font-size: 100%; } 
+            &-side span { line-height: 1; left: -50%; }
+            &-top span { font-size: 100%; } 
+        } 
+    }
+} 
 
 /*memb*/
-.memb{ padding: 3vh 0;
+.memb{ padding: 0 0 3vh;
     .col-12 {padding: 0 15px;}
     &-ttl { font-size: 86px;font-size: 7vmin; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; margin-bottom: 2vh; }
     &-btn {display: block; max-width: 400px;letter-spacing: 3px;text-transform: uppercase;text-align: center; margin-top: 24px; margin-bottom: 2vh;position: relative;
@@ -246,11 +264,16 @@
         &-btn {font-size: 16px;letter-spacing: 2px;}
     }
 }
+@media(min-width: 1200px) and (max-width: 1600px){
+    .memb {
+        &-btn {margin-top: 0;}
+    }
+} 
 
 /*battles*/
 .battles{ padding: 50px 0;
     &-ttl { font-size: 86px;font-size: 7vmin; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; margin-bottom: 2vh;padding-left: 175px; }
-    &-btn {display: block; max-width: 400px;letter-spacing: 3px;text-transform: uppercase;text-align: center; margin-top: 24px; margin-bottom: 70px; position: relative;
+    &-btn {display: block; max-width: 400px;letter-spacing: 3px;text-transform: uppercase;text-align: center; margin-bottom: 2vh; position: relative;
         span {font-size: 18px;display: block;background: linear-gradient(to right, #2312be, #ffffff00, #ffffff00), url('../img/arr-purp.png')no-repeat 94% 50%;padding: 12px 10px; color: #2312be;position: relative;z-index: 2;}
         &:before {content: '';display: block;width:0; height: 100%; opacity: 0;position: absolute;left: 0; top: 0;@include trans(0.3s);z-index: 1;background: #2312be;}
         &:hover, &:focus {text-decoration: none;color: #2312be; 
@@ -328,11 +351,17 @@
         }
     }
 }
+@media(min-width: 1200px) and (max-width: 1600px){
+    .battles {padding: 0px 0;
+        &-ttl { padding-left: 25%; } 
+        &-cont { padding-left: 25%; }
+    }
+} 
 
 /*learn*/
 .learn{ padding: 50px 0 0px;
     &-ttl { font-size: 86px;font-size: 7vmin; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; margin-bottom: 2vh; }
-    &-btn {display: block; max-width: 400px;letter-spacing: 3px;text-transform: uppercase;text-align: center; margin-top: 24px; margin-bottom: 70px;position: relative;
+    &-btn {display: block; max-width: 400px;letter-spacing: 3px;text-transform: uppercase;text-align: center; margin-bottom: 2vh;position: relative;
         span {font-size: 18px;display: block;background: linear-gradient(to right, #2312be, #ffffff00, #ffffff00), url('../img/arr-purp.png')no-repeat 94% 50%;padding: 12px 10px; color: #2312be;position: relative;z-index: 2;}
         &:before {content: '';display: block;width:0; height: 100%; opacity: 0;position: absolute;left: 0; top: 0;@include trans(0.3s);z-index: 1;background: #2312be;}
         &:hover, &:focus {text-decoration: none;color: #2312be; 
@@ -378,5 +407,18 @@
         &-txt { font-size: 30px; margin-bottom: 20px; }
     }
 }
+@media(min-width: 1200px) and (max-width: 1600px){
+    .learn {
+        &-ttl { padding-right: 15px; } 
+        &-btn { margin-top: 0; margin-bottom: 2vh; } 
+        &-bl { min-height: 27vh; 
+            &-ttl { font-size: 2.5vh; }
+            &-txt { margin-top: 2vh; } 
+        } 
+        &-img { height: 27vh; 
+            img { max-width: 100%; height: 100%; }
+        } 
+    }
+} 
 
 .fp-tableCell { padding-top: 125px; }

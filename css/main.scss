@@ -34,7 +34,9 @@ img { max-width: 100%; height:auto; }
     .col-12 {padding: 0;}
     .container-fluid {}
 }
-
+@media(min-width: 1200px) and (max-width: 1600px){
+    .container {max-width: 78%;}
+}
 /*header*/
 .h { 
     &-mob {display: none;}
@@ -144,6 +146,16 @@ header { padding: 40px 0;padding-left: 35px;background: #fff;position: fixed; le
         }
         &-pc {display: none;}
     }
+}
+@media(min-width: 1200px) and (max-width: 1600px){
+    .h {
+        &-right { height: 20vh; 
+            &-links { margin-right: 8vh; } 
+        } 
+    }
+    header { padding: 3vh 0; padding-left: 35px; 
+        &.fixed .h-right { height: 14vh; padding-top: 7vh; }
+    } 
 }
 
 @import "_index";
