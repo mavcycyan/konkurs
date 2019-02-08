@@ -31,3 +31,41 @@ $('.h-mob-srch-btn').click(function(){
         $('.h-mob-srch-cont').addClass('active');
     }
 }); 
+
+/***/
+$('.h-right-links a').click(function(){
+    var lnksTxt = $(this).html();
+    switch(lnksTxt){
+        case "Вход":
+            $('.h-right').addClass('clicked');
+            $('.h-right-reg').addClass('hidden');
+            if($(this).hasClass('active')){
+                $('.h-right-links a').removeClass('active');
+                $('.h-right-login').addClass('hidden');
+                $(this).removeClass('active');
+                $('.h-right').removeClass('clicked');
+            }
+            else {
+                $('.h-right-links a').removeClass('active');
+                $('.h-right-login').removeClass('hidden');
+                $(this).addClass('active');
+            }            
+            break;
+            
+        case "Регистрация":
+            $('.h-right').addClass('clicked');
+            $('.h-right-login').addClass('hidden');
+            if($(this).hasClass('active')){
+                $('.h-right-links a').removeClass('active');
+                $('.h-right-reg').addClass('hidden');
+                $(this).removeClass('active');
+                $('.h-right').removeClass('clicked');
+            }
+            else {
+                $('.h-right-links a').removeClass('active');
+                $('.h-right-reg').removeClass('hidden');
+                $(this).addClass('active');
+            }            
+            break;
+    }
+});

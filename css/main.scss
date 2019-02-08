@@ -72,9 +72,57 @@ img { max-width: 100%; height:auto; }
     }
     &-mob-menu {display: none;}
     &-right { background: #2413be; position: absolute; width: 100%; top: 0; height: 200px; margin-top: -40px; padding-top: 76px; @include trans(0.3s);
+        &.clicked {height: auto!important; }
         &-links { margin-right: 140px; float: right; 
             a { color: #fff; margin: 0 20px; text-transform: uppercase; }
         } 
+        &-login {height:auto;margin: 8vh; margin-top: 60px; margin-bottom: 40px;overflow:hidden;
+            &.hidden {height:0px;margin-top:0px;}
+        }
+        &-reg {height:auto;margin: 8vh; margin-top: 60px; margin-bottom: 40px;overflow:hidden;
+            &.hidden {height:0px;margin-top:0px;}
+        }
+        &-form {
+            input { border: 0; border-bottom: 1px solid #fff; background: none; color: #fff; display: block; margin-bottom: 20px; width: 100%; padding-bottom: 7px; text-transform: uppercase; letter-spacing: 3px;
+                &::-webkit-input-placeholder {color:#ffffff80;}
+                &::-moz-placeholder {color:#ffffff80;}
+                &:-ms-input-placeholder {color:#ffffff80;}
+                &:-moz-placeholder { color:#ffffff80;}  
+                &:focus {box-shadow:none; outline:0;}
+            }   
+            select { border: 0; border-bottom: 1px solid #fff; background: none; color: #fff; display: block; margin-bottom: 20px; width: 100%; padding-bottom: 7px; text-transform: uppercase; letter-spacing: 3px;
+                &:focus {box-shadow:none; outline:0;}
+            }  
+            &-forgot { font-family: 'futurafuturisc', sans-serif; width: 122px; display: block; color: #fff; font-weight: 300; font-size: 16px; margin: 10px auto 0; 
+                &:hover, &:focus {color: #fff;}
+            }
+            button {display: block; max-width: 400px; letter-spacing: 3px; text-transform: uppercase; text-align: center; position: relative; background: none; border: 0; width: 100%;padding: 0; margin: 0; margin-top: 20px;
+                span {font-size: 18px; color: #fff; background: linear-gradient(to right, #fff, #ffffff00, #ffffff00), url(../img/arr.png) no-repeat 94% 50%; display: block; padding: 6px 10px;position: relative;z-index: 2;@include trans(0.3s);}
+                &:before {content: '';display: block;width:0; height: 100%; opacity: 0;position: absolute;left: 0; top: 0;@include trans(0.3s);z-index: 1}
+                &:hover, &:focus {text-decoration: none;color: #fff;
+                    span {color: #2312be;background: linear-gradient(to right, #fff, #ffffff00, #ffffff00), url(../img/arr-purp.png) no-repeat 94% 50%;@include trans(0.3s);}
+                    &:before {width: 100%;background: #fff;opacity: 1;@include trans(0.3s);}
+                }
+            }
+        }
+        &-soc { margin-top: 20px; 
+            &-ttl { font-family: 'futurafuturisc', sans-serif; display: block; color: #fff; font-weight: 300; font-size: 16px; text-align: center; }
+            &-links { text-align: center; margin-top: 10px; 
+                a { font-size: 24px; color: #fff; margin: 0 8px; }
+            } 
+            &-lbl { text-align: center; 
+                input#reg { display: none; } 
+                label { color: #fff; padding-left: 30px;font-family: 'futurafuturisc', sans-serif; font-weight: 300; position: relative;
+                    span { display: block; width: 20px; height: 20px; position: absolute; top: 50%; margin-top: -10px; border: 1px solid #fff; left: 0; }
+                    a {color: #fff;font-family: 'futurademic', sans-serif; font-weight: 500}
+                }
+                input#reg:checked ~ label {
+                    span {
+                        &:before {content: ''; display: block; top: 2px; position: absolute; left: 2px; width: 14px; height: 14px; background: #fff;}
+                    }
+                }
+            }
+        }  
     } 
 }
 header { padding: 40px 0;padding-left: 35px;background: #fff;position: fixed; left: 0;width: 100%;top: 0; z-index: 200;
