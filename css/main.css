@@ -648,21 +648,10 @@ header {
         -moz-transition: 0.3s;
         -o-transition: 0.3s;
         -ms-transition: 0.3s; }
-  .best-top-ttl {
-    font-size: 36px;
-    color: #2312be;
-    padding-left: 30px; }
-  .best-top-txt {
-    color: #2312be;
-    font-family: 'futurafuturisc', sans-serif;
-    font-weight: 300;
-    text-decoration: underline;
-    padding-left: 30px; }
   .best-img {
     margin-top: 10px;
     margin-bottom: 0;
-    margin-left: 92px;
-    max-width: 708px; }
+    margin-left: 60px; }
     .best-img ul li {
       position: relative; }
       .best-img ul li.go_left {
@@ -762,6 +751,9 @@ header {
         -ms-transition: 0.3s; }
 
 /*best*/
+@media (max-width: 1199px) {
+  .best {
+    padding-top: 125px; } }
 @media (min-width: 992px) and (max-width: 1600px) {
   .best-ttl {
     padding-left: 15px; }
@@ -792,7 +784,24 @@ header {
     padding-left: 0; }
   .best-bl-num {
     padding: 17px 0;
-    padding-left: 20px; } }
+    padding-left: 20px; }
+  .best-img {
+    margin: 20px 0; }
+
+  .strange-slider-cont {
+    padding: 0;
+    padding-top: 60px; }
+
+  .strange-slider-pager {
+    transform: rotate(0);
+    top: 0;
+    bottom: auto;
+    left: 0;
+    text-align: center;
+    width: 100%; }
+
+  .best-img ul li {
+    padding: 0 10px; } }
 @media (min-width: 1200px) and (max-width: 1600px) {
   .best-ttl {
     font-size: 7vmin; } }
@@ -957,6 +966,9 @@ header {
       color: #fff; }
 
 /*last_konk*/
+@media (max-width: 1199px) {
+  .last_konk {
+    padding-top: 125px; } }
 @media (min-width: 992px) and (max-width: 1600px) {
   .last_konk-bl-img img {
     width: calc(100% - 10%); }
@@ -1118,6 +1130,11 @@ header {
       display: block; }
 
 /*memb*/
+@media (max-width: 1199px) {
+  .memb {
+    padding-top: 125px; }
+    .memb-bl {
+      margin-bottom: 20px; } }
 @media (min-width: 992px) and (max-width: 1600px) {
   .memb-bl-num {
     font-size: 19px;
@@ -1313,6 +1330,9 @@ header {
       -ms-transition: 0.3s; }
 
 /*battles*/
+@media (max-width: 1199px) {
+  .battles {
+    padding-top: 125px; } }
 @media (min-width: 992px) and (max-width: 1600px) {
   .battles-ttl {
     padding-left: 15px; }
@@ -1456,29 +1476,48 @@ header {
     flex-direction: column;
     min-height: 333px;
     padding: 40px 20px 20px 40px;
-    opacity: 1;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
-    -ms-transition: 0.3s; }
-    .learn-bl-ttl {
-      font-size: 24px;
-      display: block; }
-    .learn-bl-txt {
-      font-size: 24px;
-      font-family: 'futurafuturisc', sans-serif;
-      font-weight: 300;
-      display: block;
-      text-decoration: underline; }
-    .learn-bl:hover, .learn-bl:focus {
-      text-decoration: none;
-      opacity: 0.5;
+    position: relative; }
+    .learn-bl-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+      overflow: hidden;
       transition: 0.3s;
       -webkit-transition: 0.3s;
       -moz-transition: 0.3s;
       -o-transition: 0.3s;
       -ms-transition: 0.3s; }
+      .learn-bl-img img {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto; }
+    .learn-bl-ttl {
+      font-size: 24px;
+      display: block;
+      position: relative;
+      z-index: 2; }
+    .learn-bl-txt {
+      font-size: 24px;
+      font-family: 'futurafuturisc', sans-serif;
+      font-weight: 300;
+      display: block;
+      text-decoration: underline;
+      position: relative;
+      z-index: 2; }
+    .learn-bl:hover, .learn-bl:focus {
+      text-decoration: none; }
+      .learn-bl:hover .learn-bl-img, .learn-bl:focus .learn-bl-img {
+        opacity: 1;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        -ms-transition: 0.3s; }
   .learn-cls:nth-child(2n+1) .learn-bl {
     background: url("../img/arr.png") no-repeat 90% 92%, #2413be; }
     .learn-cls:nth-child(2n+1) .learn-bl-ttl {
@@ -1493,6 +1532,9 @@ header {
       color: #2413be; }
 
 /*learn*/
+@media (max-width: 1199px) {
+  .learn {
+    padding-top: 125px; } }
 @media (min-width: 992px) and (max-width: 1600px) {
   .learn-ttl {
     padding-left: 15px; }

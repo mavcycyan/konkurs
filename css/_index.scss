@@ -82,11 +82,7 @@
             &:before {width: 100%;opacity: 1;@include trans(0.3s);}
         }
     }
-    &-top{
-        &-ttl {font-size: 36px;color: #2312be;padding-left: 30px;}
-        &-txt {color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 300;text-decoration: underline;padding-left: 30px;}
-    }
-    &-img {margin-top: 10px;margin-bottom: 0; margin-left: 92px;max-width: 708px;
+    &-img {margin-top: 10px;margin-bottom: 0; margin-left: 60px;
         ul {
             li { position: relative;
                 &.go_left {z-index: 100;
@@ -115,6 +111,9 @@
     } 
 }
 /*best*/
+@media(max-width: 1199px){
+    .best {padding-top: 125px;}
+} 
 @media(min-width: 992px) and (max-width: 1600px){
     .best {
         &-ttl {padding-left: 15px;}
@@ -142,7 +141,11 @@
         &-bl {
             &-num {padding: 17px 0;padding-left: 20px;}
         }
+        &-img { margin: 20px 0; } 
     }
+    .strange-slider-cont { padding: 0; padding-top: 60px; } 
+    .strange-slider-pager { transform: rotate(0); top: 0; bottom: auto; left: 0; text-align: center; width: 100%; } 
+    .best-img ul li { padding: 0 10px; }    
 }
 @media(min-width: 1200px) and (max-width: 1600px){
     .best {
@@ -185,6 +188,9 @@
     } 
 }
 /*last_konk*/
+@media(max-width: 1199px){
+    .last_konk {padding-top: 125px;}
+} 
 @media(min-width: 992px) and (max-width: 1600px){
     .last_konk {
         &-bl { 
@@ -249,6 +255,11 @@
     } 
 }
 /*memb*/
+@media(max-width: 1199px){
+    .memb {padding-top: 125px;
+        &-bl {margin-bottom: 20px;}
+    }
+} 
 @media(min-width: 992px) and (max-width: 1600px){
     .memb {
         &-bl { 
@@ -313,6 +324,9 @@
     } 
 }
 /*battles*/
+@media(max-width: 1199px){
+    .battles {padding-top: 125px;}
+} 
 @media(min-width: 992px) and (max-width: 1600px){
     .battles {
         &-ttl {padding-left: 15px;}
@@ -371,10 +385,15 @@
     }
     &-txt {font-size: 36px;color: #2312be; padding-right: 75px;background: url('../img/arr-purp.png')no-repeat 94% 50%; display: inline-block;}
     &-img {text-align: center;} 
-    &-bl {display: flex; justify-content: space-between; flex-direction: column; min-height: 333px; padding: 40px 20px 20px 40px;opacity: 1; @include trans(0.3s);
-        &-ttl {font-size: 24px;display: block;}
-        &-txt {font-size: 24px;font-family: 'futurafuturisc', sans-serif; font-weight: 300;display: block;text-decoration: underline;}
-        &:hover, &:focus {text-decoration: none;opacity: 0.5; @include trans(0.3s);}
+    &-bl {display: flex; justify-content: space-between; flex-direction: column; min-height: 333px; padding: 40px 20px 20px 40px; position: relative; 
+        &-img {position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 1;opacity: 0;overflow: hidden;@include trans(0.3s);
+            img {min-width: 100%;min-height: 100%;width: auto;height: auto;}
+        }
+        &-ttl {font-size: 24px;display: block;position:relative;z-index:2;}
+        &-txt {font-size: 24px;font-family: 'futurafuturisc', sans-serif; font-weight: 300;display: block;text-decoration: underline;position:relative;z-index:2;}
+        &:hover, &:focus {text-decoration: none;
+            .learn-bl-img {opacity: 1;@include trans(0.3s);}
+        }
     }
     &-cls {
         &:nth-child(2n+1){
@@ -392,6 +411,9 @@
     }
 }
 /*learn*/
+@media(max-width: 1199px){
+    .learn {padding-top: 125px;}
+} 
 @media(min-width: 992px) and (max-width: 1600px){
     .learn {
         &-ttl {padding-left: 15px;}
