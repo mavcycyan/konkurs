@@ -1,7 +1,7 @@
 /*page_compet*/
 .page_compet {padding-top: 225px; padding-bottom: 50px;
     &-tweek {
-        &-ttl { font-size: 86px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; }
+        &-ttl { font-size: 86px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; margin-bottom: 60px;}
         &-sub_ttl { font-size: 36px;color: #2312be;padding-left: 30px; background: url(../img/arr-purp.png) no-repeat 94% 50%;
     padding-right: 75px; display: inline-block;}
         &-txt { font-size: 24px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 300; margin-top: 20px; }
@@ -11,7 +11,12 @@
                 &:last-child {float: right;display: block;padding-left: 5px;} 
             }
         }
-        &-bl { padding: 20px 0; padding-left: 160px; padding-right: 80px; 
+        &-img { margin: 0 10vw 20px; }
+        &-org { padding-left: 30px; font-family: 'futurafuturisc', sans-serif; font-weight: 300; font-size: 36px; margin: 40px 10vw 20px; color: #2312be; 
+            span { font-family: 'futurademic', sans-serif; font-weight: 500; text-decoration: underline;}
+        }
+        &-cont { margin-bottom: 60px;}
+        &-bl { padding: 20px 0; padding-left: 9vw; padding-right: 3vw;
             &-date { overflow: hidden; position: relative;
                 &:before {content: '';display: block;position: absolute;top: 50%;height: 1px;width: 100%;background: #2312be;z-index: 0;}
                 span {z-index: 1; position: relative; color: #2312be;
@@ -64,13 +69,45 @@
             }
         } 
     }
+
+    &_konk{ padding: 0 0 3vh;
+        .col-12 {padding: 0 15px;}
+        &-bl { max-width: 402px; margin: 0 auto; position: relative; display: block; color: #fff;overflow: hidden; margin-bottom: 30px;
+            &-top{color: #2312be;overflow: hidden; display: block;font-family: 'futurafuturisc', sans-serif; font-weight: 300;margin-bottom: 10px; position: relative;
+                &:before { content: ''; background: #2312be; width: 100%; height: 1px; display: block; top: 50%; position: absolute; z-index: -1; }
+                &-left {float: left;display: block;background: #fff; padding-right: 5px;}
+                &-right {float: right;display: block;background: #fff; padding-left: 5px;}
+            }
+            &-img {display: block; text-align: right;position: relative;}
+            &-num { position: absolute; top: 0; color: #fff; font-size: 24px; background: #000; width: 241px; padding: 33px 0;font-family: 'futurafuturisc', sans-serif; font-weight: 300; padding-left: 20px;display: block; text-align: left; z-index: 2;
+                span {text-decoration: underline;}
+            } 
+            &-ttl { position: absolute; bottom: 30px;left: 108px;color: #fff; font-size: 24px;background: url('../img/arr.png')no-repeat 94% 50%; padding-right: 75px;display: block;}
+            &-side { display: block; height: 100%; width: 82px; position: absolute; left: 0; bottom: 0; background: #fff;
+                span {color: #2312be; text-decoration: underline; position: absolute; bottom: 25px; left: 0; transform: rotate(-90deg);}
+            }
+            &:hover, &:focus {text-decoration: none;color: #fff;}
+        } 
+    }   
+    &-panel {margin-bottom: 60px;
+        &-bl {display: inline-block; width: 230px; max-width: 32%; padding: 0 10px;
+            select { border: 0; border-bottom: 1px solid #fff; background: none; color: #fff; display: block; margin-bottom: 20px; width: 100%; padding-bottom: 7px; text-transform: uppercase; letter-spacing: 3px; max-width: 220px; margin: 20px auto;
+                &:focus {box-shadow:none; outline:0;}
+            }              
+        }
+        &-left { padding: 20px 3vw; background: #2413be;text-align: right;}
+        &-right { padding: 20px 3vw;
+            .page_compet-panel-bl { max-width: 40%;
+                select {border-bottom: 1px solid #2413be; color: #2413be;}
+            }
+        }
+    }
 }
 /*page_compet*/
 @media(min-width: 992px) and (max-width: 1600px){
-    .page_compet {
+    .page_compet { padding-top: 150px;
         &-tweek {
             &-ttl {padding-left: 15px;}          
-            &-bl {padding-left: 15px;}          
         }
     }
 }
@@ -80,5 +117,49 @@
             &-ttl {font-size: 48px;}
             &-sub_ttl {font-size: 16px;letter-spacing: 2px;margin-bottom: 20px;}           
         }
+        &-panel {
+            &-bl { width: 100%; max-width: 230px; }
+            &-left { text-align: center; } 
+            &-right { text-align: center; 
+                .page_compet-panel-bl {  width: 100%; max-width: 230px;}
+            } 
+        }
     } 
 }
+
+    @media(max-width: 1199px){
+        .page_compet_konk {padding-top: 125px;}
+    } 
+    @media(min-width: 992px) and (max-width: 1600px){
+        .page_compet_konk {
+            &-bl { 
+                &-img {
+                    img {width:calc(100% - 10%);}
+                }
+                &-num { font-size: 19px; width: 160px; padding: 20px 0; padding-left: 16px; } 
+                &-ttl { left: 45px; font-size: 19px; padding-right: 67px; }
+                &-side {width: 10%; }
+            } 
+        }
+    }
+    @media(min-width: 768px) and (max-width: 991px){
+        .page_compet_konk {
+            &-ttl {font-size: 76px;}
+        }
+    }
+    @media(max-width: 767px){
+        .page_compet_konk {
+            &-ttl {font-size: 48px;}
+            &-btn {font-size: 16px;letter-spacing: 2px;}
+        }
+    }
+    @media(min-width: 1200px) and (max-width: 1600px){
+        .page_compet_konk {
+            &-btn {margin-top: 0;}
+            &-bl { max-width: 179px; 
+                &-num { font-size: 19px; width: 61%; padding: 5% 5%; font-size: 100%; } 
+                &-side span { line-height: 1; left: -50%; }
+                &-top span { font-size: 100%; } 
+            } 
+        }
+    }

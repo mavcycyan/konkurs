@@ -33,7 +33,8 @@ $('.h-mob-srch-btn').click(function(){
 }); 
 
 /***/
-$('.h-right-links a').click(function(){
+$('.h-right-links a').click(function(e){
+    e.preventDefault();
     var lnksTxt = $(this).html();
     switch(lnksTxt){
         case "Вход":

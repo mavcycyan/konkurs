@@ -1,0 +1,13 @@
+/*page_konkurs*/
+.page_konkurs {padding-top: 124px; padding-bottom: 50px;
+    .col-12 {padding: 0 15px;}
+    &-ttl { font-size: 86px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; margin-bottom: 60px;}
+    &-end { background: #000; color: #fff; font-family: 'futurafuturisc', sans-serif; font-weight: 500; padding: 56px 40px; font-size: 36px; }
+}
+/*page_konkurs*/
+@media(min-width: 992px) and (max-width: 1600px){
+    .page_konkurs { padding-top: 84px;}
+}
+@media(max-width: 767px){
+    .page_konkurs { padding-top: 64px;} 
+}

@@ -38,6 +38,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+button {
+  cursor: pointer; }
+
 @media (min-width: 1200px) {
   .container {
     max-width: 1600px; }
@@ -260,7 +263,7 @@ img {
     border: 0;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     margin-top: 20px; }
     .h-right-form button span {
       font-size: 18px;
@@ -1755,7 +1758,8 @@ header {
     color: #2312be;
     font-family: 'futurafuturisc', sans-serif;
     font-weight: 500;
-    line-height: 1; }
+    line-height: 1;
+    margin-bottom: 60px; }
   .page_compet-tweek-sub_ttl {
     font-size: 36px;
     color: #2312be;
@@ -1788,10 +1792,25 @@ header {
       float: right;
       display: block;
       padding-left: 5px; }
+  .page_compet-tweek-img {
+    margin: 0 10vw 20px; }
+  .page_compet-tweek-org {
+    padding-left: 30px;
+    font-family: 'futurafuturisc', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    margin: 40px 10vw 20px;
+    color: #2312be; }
+    .page_compet-tweek-org span {
+      font-family: 'futurademic', sans-serif;
+      font-weight: 500;
+      text-decoration: underline; }
+  .page_compet-tweek-cont {
+    margin-bottom: 60px; }
   .page_compet-tweek-bl {
     padding: 20px 0;
-    padding-left: 160px;
-    padding-right: 80px; }
+    padding-left: 9vw;
+    padding-right: 3vw; }
     .page_compet-tweek-bl-date {
       overflow: hidden;
       position: relative; }
@@ -1884,13 +1903,133 @@ header {
             float: left; }
           .page_compet-tweek-bl:nth-child(5n+3) .page_compet-tweek-bl-btm span:last-child {
             float: right; }
+  .page_compet_konk {
+    padding: 0 0 3vh; }
+    .page_compet_konk .col-12 {
+      padding: 0 15px; }
+    .page_compet_konk-bl {
+      max-width: 402px;
+      margin: 0 auto;
+      position: relative;
+      display: block;
+      color: #fff;
+      overflow: hidden;
+      margin-bottom: 30px; }
+      .page_compet_konk-bl-top {
+        color: #2312be;
+        overflow: hidden;
+        display: block;
+        font-family: 'futurafuturisc', sans-serif;
+        font-weight: 300;
+        margin-bottom: 10px;
+        position: relative; }
+        .page_compet_konk-bl-top:before {
+          content: '';
+          background: #2312be;
+          width: 100%;
+          height: 1px;
+          display: block;
+          top: 50%;
+          position: absolute;
+          z-index: -1; }
+        .page_compet_konk-bl-top-left {
+          float: left;
+          display: block;
+          background: #fff;
+          padding-right: 5px; }
+        .page_compet_konk-bl-top-right {
+          float: right;
+          display: block;
+          background: #fff;
+          padding-left: 5px; }
+      .page_compet_konk-bl-img {
+        display: block;
+        text-align: right;
+        position: relative; }
+      .page_compet_konk-bl-num {
+        position: absolute;
+        top: 0;
+        color: #fff;
+        font-size: 24px;
+        background: #000;
+        width: 241px;
+        padding: 33px 0;
+        font-family: 'futurafuturisc', sans-serif;
+        font-weight: 300;
+        padding-left: 20px;
+        display: block;
+        text-align: left;
+        z-index: 2; }
+        .page_compet_konk-bl-num span {
+          text-decoration: underline; }
+      .page_compet_konk-bl-ttl {
+        position: absolute;
+        bottom: 30px;
+        left: 108px;
+        color: #fff;
+        font-size: 24px;
+        background: url("../img/arr.png") no-repeat 94% 50%;
+        padding-right: 75px;
+        display: block; }
+      .page_compet_konk-bl-side {
+        display: block;
+        height: 100%;
+        width: 82px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: #fff; }
+        .page_compet_konk-bl-side span {
+          color: #2312be;
+          text-decoration: underline;
+          position: absolute;
+          bottom: 25px;
+          left: 0;
+          transform: rotate(-90deg); }
+      .page_compet_konk-bl:hover, .page_compet_konk-bl:focus {
+        text-decoration: none;
+        color: #fff; }
+  .page_compet-panel {
+    margin-bottom: 60px; }
+    .page_compet-panel-bl {
+      display: inline-block;
+      width: 230px;
+      max-width: 32%;
+      padding: 0 10px; }
+      .page_compet-panel-bl select {
+        border: 0;
+        border-bottom: 1px solid #fff;
+        background: none;
+        color: #fff;
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+        padding-bottom: 7px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        max-width: 220px;
+        margin: 20px auto; }
+        .page_compet-panel-bl select:focus {
+          box-shadow: none;
+          outline: 0; }
+    .page_compet-panel-left {
+      padding: 20px 3vw;
+      background: #2413be;
+      text-align: right; }
+    .page_compet-panel-right {
+      padding: 20px 3vw; }
+      .page_compet-panel-right .page_compet-panel-bl {
+        max-width: 40%; }
+        .page_compet-panel-right .page_compet-panel-bl select {
+          border-bottom: 1px solid #2413be;
+          color: #2413be; }
 
 /*page_compet*/
 @media (min-width: 992px) and (max-width: 1600px) {
-  .page_compet-tweek-ttl {
-    padding-left: 15px; }
-  .page_compet-tweek-bl {
-    padding-left: 15px; } }
+  .page_compet {
+    padding-top: 150px; }
+    .page_compet-tweek-ttl {
+      padding-left: 15px; } }
 @media (max-width: 767px) {
   .page_compet {
     padding-top: 64px; }
@@ -1899,7 +2038,86 @@ header {
     .page_compet-tweek-sub_ttl {
       font-size: 16px;
       letter-spacing: 2px;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+    .page_compet-panel-bl {
+      width: 100%;
+      max-width: 230px; }
+    .page_compet-panel-left {
+      text-align: center; }
+    .page_compet-panel-right {
+      text-align: center; }
+      .page_compet-panel-right .page_compet-panel-bl {
+        width: 100%;
+        max-width: 230px; } }
+@media (max-width: 1199px) {
+  .page_compet_konk {
+    padding-top: 125px; } }
+@media (min-width: 992px) and (max-width: 1600px) {
+  .page_compet_konk-bl-img img {
+    width: calc(100% - 10%); }
+  .page_compet_konk-bl-num {
+    font-size: 19px;
+    width: 160px;
+    padding: 20px 0;
+    padding-left: 16px; }
+  .page_compet_konk-bl-ttl {
+    left: 45px;
+    font-size: 19px;
+    padding-right: 67px; }
+  .page_compet_konk-bl-side {
+    width: 10%; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  .page_compet_konk-ttl {
+    font-size: 76px; } }
+@media (max-width: 767px) {
+  .page_compet_konk-ttl {
+    font-size: 48px; }
+  .page_compet_konk-btn {
+    font-size: 16px;
+    letter-spacing: 2px; } }
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .page_compet_konk-btn {
+    margin-top: 0; }
+  .page_compet_konk-bl {
+    max-width: 179px; }
+    .page_compet_konk-bl-num {
+      font-size: 19px;
+      width: 61%;
+      padding: 5% 5%;
+      font-size: 100%; }
+    .page_compet_konk-bl-side span {
+      line-height: 1;
+      left: -50%; }
+    .page_compet_konk-bl-top span {
+      font-size: 100%; } }
+/*page_konkurs*/
+.page_konkurs {
+  padding-top: 124px;
+  padding-bottom: 50px; }
+  .page_konkurs .col-12 {
+    padding: 0 15px; }
+  .page_konkurs-ttl {
+    font-size: 86px;
+    color: #2312be;
+    font-family: 'futurafuturisc', sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 60px; }
+  .page_konkurs-end {
+    background: #000;
+    color: #fff;
+    font-family: 'futurafuturisc', sans-serif;
+    font-weight: 500;
+    padding: 56px 40px;
+    font-size: 36px; }
+
+/*page_konkurs*/
+@media (min-width: 992px) and (max-width: 1600px) {
+  .page_konkurs {
+    padding-top: 84px; } }
+@media (max-width: 767px) {
+  .page_konkurs {
+    padding-top: 64px; } }
 /*footer*/
 footer {
   background: #2413be;
