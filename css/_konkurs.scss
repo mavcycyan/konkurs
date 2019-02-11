@@ -1,13 +1,210 @@
 /*page_konkurs*/
-.page_konkurs {padding-top: 124px; padding-bottom: 50px;
+.page_konkurs {padding-top: 124px; padding-bottom: 50px;overflow: hidden;
     .col-12 {padding: 0 15px;}
-    &-ttl { font-size: 86px; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; margin-bottom: 60px;}
-    &-end { background: #000; color: #fff; font-family: 'futurafuturisc', sans-serif; font-weight: 500; padding: 56px 40px; font-size: 36px; }
+    &-ttl { font-size: 7vmin; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; margin-bottom: 5.2vw; margin-top: 90px;}
+    &-end { background: #000; color: #fff; font-family: 'futurafuturisc', sans-serif; font-weight: 500; padding: 56px 40px; font-size: 36px; position: relative;
+        &:before { content: ''; display: block; height: 100%; width: 100vw; background: #000; position: absolute; top: 0; left: 0; z-index: -1; }
+    }
+    &-win { background: #000; color: #fff; font-family: 'futurafuturisc', sans-serif; font-weight: 500; padding: 56px 40px; font-size: 36px; position: relative;
+        &:before { content: ''; display: block; height: 100%; width: 100vw; background: #000; position: absolute; top: 0; left: 0; z-index: -1; }
+        .left { margin-right: 12vw;}
+    }
+    &-dwnl_img { border: 1px dashed #2312be; padding: 126px 100px; max-width: 800px; 
+        .top { font-size: 36px; display: block; text-align: center; text-decoration: underline; color: #2312be; } 
+        .middle { display: block; text-align: center; font-size: 24px; font-family: 'futurafuturisc', sans-serif; color: #2413be; } 
+        .bottom { font-size: 36px; display: block; text-align: center; color: #2312be; }
+    } 
+    &-dwnl_btns { margin-top: 5.2vw; } 
+    &-btn { display: inline-block; text-align: center; font-size: 18px; font-family: 'futurafuturisc', sans-serif; color: #fff; font-weight: 300; background: #2413be; max-width: 242px; width: 100%; padding: 36px 10px; margin-right: 80px; margin-bottom: 25px; opacity: 1; @include trans(0.3s);
+        &:last-child { margin-right: 0; }
+        &:hover, &:focus {text-decoration: none; color: #fff; opacity: 0.5; @include trans(0.3s);}
+    } 
+    &-pabl { margin-top: 75px; display: inline-block; color: #2312be; font-family: 'futurafuturisc', sans-serif; font-weight: 500; font-size: 36px; text-decoration: underline; 
+        &:hover, &:focus {text-decoration: none; color: #2312be; }
+    }
+    &-winner { background: #000; max-width: 800px; margin-bottom: 60px;
+        &-top { overflow: hidden; 
+            & > img { max-width: 20%; }
+        } 
+        &-cont { display: inline-block; padding: 12px 50px; vertical-align: top; color: #fff;padding-right: 0; } 
+        &-ttl { font-size: 5vmax; font-family: 'futurafuturisc', sans-serif; margin-bottom: 27px; font-weight: 500; line-height: 1; } 
+        &-txt { font-size: 24px; font-family: 'futurafuturisc', sans-serif; font-weight: 300; display: block; 
+            b { font-family: 'futurademic', sans-serif; } 
+        }
+    } 
+    .row.lsr { position: relative; left: -86px; }
+    &-looser{
+        &-bl { max-width: 402px; margin:0 auto 30px; position: relative; display: block; color: #fff;overflow: hidden;
+            &-top { position: absolute; top: 0; color: #fff; overflow: hidden; background: #000; width: 100%; left: 0; text-align: left; z-index: 2; 
+                img { max-width: 25%; }
+            } 
+            &-cont { display: inline-block; padding: 12px 20px; vertical-align: top; color: #fff; } 
+            &-ttl {font-size: 18px; font-family: 'futurafuturisc', sans-serif; margin-bottom: 18px; font-weight: 500; line-height: 1; display: block;}
+            &-txt { font-size: 18px; font-family: 'futurafuturisc', sans-serif; font-weight: 300; display: block; display: block;}
+            &-img {display: block; text-align: right;position: relative;}
+            &-side { display: block; height: 100%; width: 82px; position: absolute; left: 0; bottom: 0; background: #fff;
+                span {color: #2312be; text-decoration: underline; position: absolute; bottom: 25px; left: 0; transform: rotate(-90deg);white-space: nowrap;}
+            }
+            &:hover, &:focus {text-decoration: none;color: #fff;}
+        }         
+    }
+    &-sponsor-black { background: #000; color: #fff; max-width: 800px;
+        &-cont { display: inline-block; padding: 20px 50px; vertical-align: top; } 
+        &-ttl { font-size: 20px; text-decoration: underline; display: block; margin-bottom: 27px; } 
+        &-txt { font-size: 18px; font-family: 'futurafuturisc', sans-serif; font-weight: 300; }
+    }     
+    &-bl { margin-bottom: 5.2vw; 
+        &-ttl { font-size: 36px; color: #2413be; margin-bottom: 25px; } 
+        &-txt { font-size: 24px; color: #2413be; 
+            &_ud { text-decoration: underline; font-size: 24px; color: #2413be; } 
+            &_thin { font-family: 'futurafuturisc', sans-serif; font-weight: 300; color: #2413be; font-size: 24px; }
+            &-price { display: block; margin-bottom: 15px; 
+                span { display: inline-block; width: 39px; height: 1px; margin: -2px 10px 0; background: #2413be; vertical-align: middle; }
+            }
+        } 
+        &-docs {margin-top: 60px;
+            a {text-decoration: underline; font-size: 24px; color: #2413be;display: block; font-family: 'futurademic', sans-serif;margin-top: 30px;}
+        }
+        &-sponsor { background: #2413be; color: #fff; 
+            & > img { max-width: 26%; }
+            &-cont { display: inline-block; padding: 20px 1vw; padding-right: 0; vertical-align: top; } 
+            &-ttl { font-size: 20px; text-decoration: underline; display: block; margin-bottom: 27px; } 
+            &-txt { font-size: 18px; font-family: 'futurafuturisc', sans-serif; font-weight: 300; }
+        } 
+    } 
+    &-judge { max-width: 160px; margin: 0 0 20px;  display: block; 
+        &:hover, &:focus {text-decoration: none;color: #fff;}
+        &-img {margin-top: 18px;display:block;position: relative;
+            &:before {content: '';display: block;opacity: 0;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url('../img/memb4.jpg')no-repeat 50% 50%, #240ac3;@include trans(0.3s);}
+            &:hover, &:focus {
+                &:before {opacity: 1;@include trans(0.3s);}
+            }
+        }
+        &-ttl {font-size: 24px;color: #2312be;display:block;}
+        &-txt {color: #37363b;font-family: 'futurafuturisc', sans-serif; font-weight: 300;margin-top: 10px;display: block;}
+    }   
+    &-portf { margin-bottom: 5.2vw; max-width: 800px; 
+        &-top { text-align: right; margin-bottom: 8px; font-size: 0; } 
+        &-txt { margin-top: 5.2vw; border-bottom: 1px solid #2413be; padding-bottom: 10px; font-size: 1.25vw; font-family: 'futurafuturisc', sans-serif; font-weight: 300; color: #2413be; }  
+        &-bin { display: inline-block; width: 16px; height: 20px; border: 0; vertical-align: middle; background: url('../img/bin.png');background-size: contain; margin-left: 7px; opacity:1; @include trans(0.3s);
+            &:hover, &:focus {outline:0; box-shadow:none;opacity:0.5; @include trans(0.3s);}
+        } 
+        &-repl { display: inline-block; width: 20px; height: 21px; border: 0; vertical-align: middle; background: url('../img/replace.png');background-size: contain; margin: 0 7px; opacity:1; @include trans(0.3s);
+            &:hover, &:focus {outline:0; box-shadow:none;opacity:0.5; @include trans(0.3s);} 
+        } 
+        &-refr { width: 100%; max-width: 156px; padding-left: 38px; border: none; vertical-align: middle; color: #fff; font-size: 24px; font-family: 'futurafuturisc', sans-serif; font-weight: 300; text-transform: lowercase; letter-spacing: 2px; border-radius: 10px; background: url('../img/refresh.png')no-repeat 10px 50%, #2413be; margin: 0 7px; opacity:1; @include trans(0.3s); 
+            &:hover, &:focus {outline:0; box-shadow:none;opacity:0.5; @include trans(0.3s);}
+        }
+    } 
 }
 /*page_konkurs*/
+@media(min-width: 1200px) and (max-width: 1600px){
+    .page_konkurs{
+        &-btn { max-width: 170px; margin-right: 24px; padding: 20px 10px; }
+        &-bl {
+            &-ttl {font-size: 28px;}
+        }
+    }
+}
+@media(min-width: 1200px) and (max-width: 1600px){
+    .page_konkurs { padding-top: 84px;
+        &-bl {
+            &-sponsor {
+                &-cont { padding: 17px 1vw;}
+                &-ttl {margin-bottom: 11px;}
+                &-txt {font-size: 16px;}
+            }
+        }
+        .row.lsr {left: 0;}
+    }
+}
+@media(min-width: 992px) and (max-width: 1199px){
+    .page_konkurs { padding-top: 142px;
+        &-bl {
+            &-ttl { font-size: 22px; margin-bottom: 15px; } 
+            &-txt { font-size: 20px; }  
+            &-txt_ud { font-size: 20px; }            
+        }  
+        &-ttl { margin-top: 55px;}
+        &-end { padding: 29px 40px;}
+        .row.lsr {left: 0;}
+    }
+}
+@media(max-width: 991px){
+    .page_konkurs { padding-top: 143px;
+        &-ttl {font-size: 48px;margin-top: 20px;}
+        &-end {
+            &:before {display: none;}
+        }
+        &-end { padding: 20px 20px; font-size: 30px; } 
+        &-dwnl_img { padding: 26px 20px; 
+            .top { font-size: 20px; } 
+            .bottom { font-size: 20px; } 
+        }
+
+        &-dwnl_btns { text-align: center; } 
+        &-btn { margin: 0 0 20px; } 
+        &-pabl { margin-top: 20px; display: block; text-align: center; margin-bottom: 20px; } 
+        &-bl {
+            &-ttl { font-size: 22px; margin-bottom: 15px; } 
+            &-txt { font-size: 20px; }  
+            &-txt_ud { font-size: 20px; }            
+        }
+        &-portf { margin: 30px 0; 
+            &-txt { font-size: 16px; }
+        }
+        .row.lsr {left: 0;}
+    } 
+} 
+
+
 @media(min-width: 992px) and (max-width: 1600px){
-    .page_konkurs { padding-top: 84px;}
+    .page_konkurs{
+        &-looser {
+            &-bl { 
+                &-img {
+                    img {width:calc(100% - 10%);}
+                }
+                &-top { font-size: 19px; padding: 20px 0; padding-left: 16px; } 
+                &-side {width: 10%; 
+                    span { left: -130%; bottom: 71px; font-size: 16px; }
+                }
+            } 
+        }
+    }
+}
+
+@media(min-width: 1200px) and (max-width: 1600px){
+    .page_konkurs{
+        &-looser {
+            &-btn {margin-top: 0;}
+            &-bl {
+                &-cont { padding: 0px 20px;}
+                &-top { font-size: 19px; padding: 5% 5%; font-size: 100%; } 
+                &-side span { line-height: 1; left: -200%; bottom: 55px; white-space: nowrap; font-size: 14px; }
+            } 
+        }
+    }
+} 
+@media(min-width: 768px) and (max-width: 991px){
+    .page_konkurs{
+        &-looser {
+            &-bl { 
+                &-side {width: 10%; 
+                    span { left: -130%; bottom: 71px; font-size: 16px; }
+                }
+            } 
+        }
+    }
 }
 @media(max-width: 767px){
-    .page_konkurs { padding-top: 64px;} 
+    .page_konkurs{
+        &-looser {
+            &-bl { 
+                &-side {
+                    span { bottom: 80px; left: -26px; }
+                }
+            } 
+        }
+    }
 }
