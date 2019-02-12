@@ -1,7 +1,12 @@
 /*page_konkurs*/
 .page_konkurs {padding-top: 124px; padding-bottom: 50px;overflow: hidden;
     .col-12 {padding: 0 15px;}
-    &-ttl { font-size: 7vmin; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; margin-bottom: 5.2vw; margin-top: 90px;}
+    &-top{color: #2312be;overflow: hidden; display: block;font-family: 'futurafuturisc', sans-serif; font-weight: 300;margin-bottom: 20px; position: relative; margin-top: 90px; max-width: 700px;
+        &:before { content: ''; background: #2312be; width: 100%; height: 1px; display: block; top: 50%; position: absolute; z-index: -1; }
+        &-left {float: left;display: block;background: #fff; padding-right: 5px;}
+        &-right {float: right;display: block;background: #fff; padding-left: 5px;}
+    }    
+    &-ttl { font-size: 7vmin; color: #2312be;font-family: 'futurafuturisc', sans-serif; font-weight: 500; line-height: 1; margin-bottom: 5.2vw; }
     &-end { background: #000; color: #fff; font-family: 'futurafuturisc', sans-serif; font-weight: 500; padding: 56px 40px; font-size: 36px; position: relative;
         &:before { content: ''; display: block; height: 100%; width: 100vw; background: #000; position: absolute; top: 0; left: 0; z-index: -1; }
     }
@@ -94,6 +99,11 @@
         } 
         &-refr { width: 100%; max-width: 156px; padding-left: 38px; border: none; vertical-align: middle; color: #fff; font-size: 24px; font-family: 'futurafuturisc', sans-serif; font-weight: 300; text-transform: lowercase; letter-spacing: 2px; border-radius: 10px; background: url('../img/refresh.png')no-repeat 10px 50%, #2413be; margin: 0 7px; opacity:1; @include trans(0.3s); 
             &:hover, &:focus {outline:0; box-shadow:none;opacity:0.5; @include trans(0.3s);}
+        }
+    } 
+    &-non_reg { margin-bottom: 3.7vw; max-width: 800px; 
+        &-btn { display: block; max-width: 800px; background: url('../img/non-reg-smile.png')no-repeat 90% 50%, #2413be; color: #fff; font-size: 30px; padding: 42px 8vw;margin-bottom: 60px; opacity: 1; @include trans(0.3s);
+            &:hover, &:focus {color: #fff;opacity:0.5; @include trans(0.3s);}
         }
     } 
 }

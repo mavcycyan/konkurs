@@ -2097,14 +2097,42 @@ header {
   overflow: hidden; }
   .page_konkurs .col-12 {
     padding: 0 15px; }
+  .page_konkurs-top {
+    color: #2312be;
+    overflow: hidden;
+    display: block;
+    font-family: 'futurafuturisc', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 90px;
+    max-width: 700px; }
+    .page_konkurs-top:before {
+      content: '';
+      background: #2312be;
+      width: 100%;
+      height: 1px;
+      display: block;
+      top: 50%;
+      position: absolute;
+      z-index: -1; }
+    .page_konkurs-top-left {
+      float: left;
+      display: block;
+      background: #fff;
+      padding-right: 5px; }
+    .page_konkurs-top-right {
+      float: right;
+      display: block;
+      background: #fff;
+      padding-left: 5px; }
   .page_konkurs-ttl {
     font-size: 7vmin;
     color: #2312be;
     font-family: 'futurafuturisc', sans-serif;
     font-weight: 500;
     line-height: 1;
-    margin-bottom: 5.2vw;
-    margin-top: 90px; }
+    margin-bottom: 5.2vw; }
   .page_konkurs-end {
     background: #000;
     color: #fff;
@@ -2500,6 +2528,31 @@ header {
       .page_konkurs-portf-refr:hover, .page_konkurs-portf-refr:focus {
         outline: 0;
         box-shadow: none;
+        opacity: 0.5;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        -ms-transition: 0.3s; }
+  .page_konkurs-non_reg {
+    margin-bottom: 3.7vw;
+    max-width: 800px; }
+    .page_konkurs-non_reg-btn {
+      display: block;
+      max-width: 800px;
+      background: url("../img/non-reg-smile.png") no-repeat 90% 50%, #2413be;
+      color: #fff;
+      font-size: 30px;
+      padding: 42px 8vw;
+      margin-bottom: 60px;
+      opacity: 1;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      -ms-transition: 0.3s; }
+      .page_konkurs-non_reg-btn:hover, .page_konkurs-non_reg-btn:focus {
+        color: #fff;
         opacity: 0.5;
         transition: 0.3s;
         -webkit-transition: 0.3s;
