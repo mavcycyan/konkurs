@@ -31,10 +31,11 @@ img { max-width: 100%; height:auto; }
 
 button {cursor: pointer;}
 
-input, button, select {
+input, button, select, textarea {
 	-moz-appearance: none; 
 	-webkit-appearance: none; 
-	appearance: none;    
+	appearance: none;   
+    &:focus {outline:0; box-shadow: none;}
 }
 
 @media(min-width: 1200px){
