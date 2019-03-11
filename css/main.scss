@@ -39,12 +39,12 @@ input, button, select, textarea {
 }
 
 @media(min-width: 1200px){
-    .container {max-width: 1600px; width: 148.2vh;}
+    .container {max-width: 1600px; /*width: 148.2vh;*/}
     .col-12 {padding: 0;}
     .container-fluid {}
 }
 @media(min-width: 1200px) and (max-width: 1600px){
-    .container {max-width: 78%; width: 148.2vh;}
+    .container {max-width: 78%; /*width: 148.2vh;*/}
 }
 /*header*/
 .h { 

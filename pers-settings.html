@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<base href=""/>
+
+	<meta name="keywords" content=". " />
+	<meta name="description" content="" />
+	<link rel="canonical" href="">
+	<title>Goawa</title> 
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/main.css" rel="stylesheet">
+	
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->	
+
+	
+	<link rel="ICON" href="favicon.ico" />
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+
+</head>
+
+<body>
+
+<header class="fixed">
+   <div class="h-pc">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-2">
+                    <a href="index.html" class="h-logo" title="Goawa">GOAWA</a>
+                </div>
+                <div class="col-12 col-md-11 col-lg-4 order-md-3 order-lg-2">
+                    <div class="h-menu">
+                        <ul>
+                            <li><a href="compet.html">Конкурсы</a></li>
+                            <li><a href="#">Батлы</a></li>
+                            <li><a href="#">Обучение</a></li>
+                            <li><a href="#">Рейтинг</a></li>
+                            <li><a href="#">О проекте</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-1 col-lg-1 order-md-3 order-lg-3">
+                    <div class="h-srch">
+                        <button class="h-srch-btn"></button>
+                        <div class="h-srch-cont">
+                            <input type="text" placeholder="Что ищем ?" class="h-srch-cont-input">
+                            <button class="h-srch-cont-btn">Найти</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 order-md-2 order-lg-4">
+                    <div class="h-right">
+                        <div class="h-right-links">
+                            <a href="#">Вход</a>
+                            <a href="#">Регистрация</a>
+                        </div>
+                        <div class="h-right-login hidden">
+                            <div class="h-right-form">
+                                <form action="" metho="post">
+                                    <input type="text" name="mail" placeholder="EMAIL">
+                                    <input type="password" name="pass" placeholder="ПАРОЛЬ">
+                                    <a href="#" class="h-right-form-forgot">Забыли пароль ?</a>
+                                    <button><span>ВОЙТИ</span></button>
+                                </form>
+                            </div>
+                            <div class="h-right-soc">
+                                <div class="h-right-soc-ttl">Зарегистрируйтесь используя соц. сеть </div>
+                                <div class="h-right-soc-links">
+                                    <a href="#" class="vk" target="_blank">VK</a>
+                                    <a href="#" class="fb" target="_blank">FB</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-right-reg hidden">
+                            <div class="h-right-form">
+                                <form action="" metho="post">
+                                    <select name="" id="">
+                                        <option value="" selected="">Организация (НЕ частное лицо)</option>
+                                        <option value="">Частное лицо</option>
+                                    </select>
+                                    <input type="text" name="mail" placeholder="EMAIL">
+                                    <input type="text" name="pass" placeholder="ПАРОЛЬ">
+                                    <input type="text" name="pass2" placeholder="ПОВТОРИТЕ ПАРОЛЬ">
+                                    <div class="h-right-soc-lbl"><input type="checkbox" id="reg"><label for="reg"><span></span>Согласен <a href="#">с пользовательским соглашением</a></label> </div>
+                                    <button><span>Зарегистрироватся</span></button>
+                                </form>
+                            </div>
+                            <div class="h-right-soc">
+                                <div class="h-right-soc-links">
+                                    <a href="#" class="vk" target="_blank">VK</a>
+                                    <a href="#" class="fb" target="_blank">FB</a>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h-mob">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div class="h-mob-srch">
+                        <button class="h-mob-srch-btn"></button>
+                        <div class="h-mob-srch-cont">
+                            <input type="text" placeholder="Что ищем ?" class="h-mob-srch-cont-input" />
+                            <button class="h-mob-srch-cont-btn">Найти</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="index.html" class="h-mob-logo" title="Goawa">GOAWA</a>
+                </div>
+                <div class="col-4">
+                    <div class="h-mob-btn">
+                        <button>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="h-mob-menu hidden">
+    <ul>
+        <li><a href="compet.html">Конкурсы</a></li>
+        <li><a href="#">Батлы</a></li>
+        <li><a href="#">Обучение</a></li>
+        <li><a href="#">Рейтинг</a></li>
+        <li><a href="#">О проекте</a></li>
+    </ul>
+</div>
+</header>
+        
+<div class="wrapper">
+   <div class="page_pers">
+      <div class="container">
+           <div class="row">
+               <div class="col-12 col-md-6">
+                   <div class="page_pers-subttl">Личные данные</div>
+               </div>
+               <div class="col-12 col-md-5">
+                   <div class="page_pers-ttl">Настройки</div>
+               </div>
+               <div class="col-12 col-md-1">
+                   <button type="button" class="page_pers-btn">Сохранить</button>
+               </div>
+           </div>
+           <div class="row frst">
+               <div class="col-12 col-md-6 col-lg-3">
+                   <div class="page_pers-left-ttl">Паспортные данные</div>
+                   <div class="page_pers-left-subttl">Пройдя верификацию вы получите тра та та</div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-5">
+                   <div class="page_pers-right-bl">
+                       <div class="page_pers-right-form">
+                           <div class="page_pers-right-form-in">
+                               <input type="text" placeholder="Фамилия">
+                           </div>
+                           <div class="page_pers-right-form-in">
+                               <input type="text" placeholder="Имя">
+                           </div>
+                           <div class="page_pers-right-form-in">
+                               <input type="text" placeholder="Отчество">
+                           </div>
+                           <div class="page_pers-right-form-sel">
+                               <select name="" id="">
+                                   <option value="">Россия</option>
+                                   <option value="">Страна</option>
+                               </select>
+                           </div>
+                           <div class="page_pers-right-form-sel">
+                               <select name="" id="">
+                                   <option value="">Белгород</option>
+                                   <option value="">Город</option>
+                               </select>
+                           </div>
+                           <div class="page_pers-right-form-in">
+                               <input type="text" placeholder="Серия и номер паспорта">
+                           </div>
+                           <div class="page_pers-right-form-in">
+                               <input type="text" placeholder="Кем и когда выдан, дата рождения, прописка">
+                           </div>                      
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="row page_pers-row">
+               <div class="col-12 col-md-6 col-lg-3">
+                   <div class="page_pers-left-ttl">Верификация</div>
+                   <div class="page_pers-left-subttl">Пройдя верификацию, вы повысите лояльность<br>среди пользователей сервиса, а так же +10 <br>к рейтингу  и символ <span class="page_pers-left-star"><img src="img/pers-star.png" alt=""></span> возле вашего имени <br>в профиле</div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-5">
+                   <div class="row page_pers-right-bl">
+                       <div class="col-12 col-md-6 col-lg-8">
+                           <div class="page_pers-right-form-in">
+                               <input type="text" value="+7">
+                           </div>
+                       </div>
+                       <div class="col-12 col-md-6 col-lg-4">
+                           <button class="page_pers-right-form-chkphn" type="button">Проверить</button>
+                       </div>
+                       <div class="col-12 col-md-6 col-lg-8">
+                           <div class="page_pers-right-form-in">
+                               <input type="text" placeholder="Введите код из sms">
+                           </div>
+                       </div>
+                   </div>
+               </div>
+          </div>
+           <div class="row page_pers-row">
+               <div class="col-12 col-md-6 col-lg-3">
+                   <div class="page_pers-left-ttl">Смена пароля</div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-5">
+                   <div class="row page_pers-right-bl">
+                       <div class="col-12">
+                           <div class="page_pers-right-form-in">
+                               <input type="text" placeholder="Старый пароль">
+                           </div>
+                       </div>
+                       <div class="col-12">
+                           <div class="page_pers-right-form-in">
+                               <input type="text" placeholder="Новый пароль">
+                           </div>
+                       </div>              
+                       <div class="col-12 col-md-6 col-lg-8">
+                           <div class="page_pers-right-form-in">
+                               <input type="text" placeholder="Повторите новый пароль">
+                           </div>
+                       </div>
+                       <div class="col-12 col-md-6 col-lg-4">
+                           <button class="page_pers-right-form-chkphn" type="button">Сохранить</button>
+                       </div>
+                   </div>
+               </div>
+          </div>
+           <div class="row page_pers-row">
+               <div class="col-12 col-md-6 col-lg-3">
+                   <div class="page_pers-left-ttl">Уведомления</div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-5">
+                   <div class="row page_pers-right-bl">
+                       <div class="col-12 col-md-6">
+                           <div class="page_pers-right-form-chbx">
+                               <input type="checkbox" id="chbx1"/>
+                               <label for="chbx1"><span></span>Подтвердите пароль</label>
+                           </div>
+                           <div class="page_pers-right-form-chbx">
+                               <input type="checkbox" id="chbx2"/>
+                               <label for="chbx2"><span></span>Подтвердите пароль</label>
+                           </div>
+                           <div class="page_pers-right-form-chbx">
+                               <input type="checkbox" id="chbx3"/>
+                               <label for="chbx3"><span></span>Подтвердите пароль</label>
+                           </div>
+                           <div class="page_pers-right-form-chbx">
+                               <input type="checkbox" id="chbx4"/>
+                               <label for="chbx4"><span></span>Подтвердите пароль</label>
+                           </div>
+                           <div class="page_pers-right-form-chbx">
+                               <input type="checkbox" id="chbx5"/>
+                               <label for="chbx5"><span></span>Подтвердите пароль</label>
+                           </div>
+                           <div class="page_pers-right-form-chbx">
+                               <input type="checkbox" id="chbx6"/>
+                               <label for="chbx6"><span></span>Подтвердите пароль</label>
+                           </div>
+                       </div>
+                       <div class="col-12 col-md-6">
+                           <div class="page_pers-right-form-chbx">
+                               <input type="checkbox" id="chbx7"/>
+                               <label for="chbx7"><span></span>Подтвердите пароль</label>
+                           </div>
+                           <div class="page_pers-right-form-chbx">
+                               <input type="checkbox" id="chbx8"/>
+                               <label for="chbx8"><span></span>Подтвердите пароль</label>
+                           </div>
+                           <div class="page_pers-right-form-chbx">
+                               <input type="checkbox" id="chbx9"/>
+                               <label for="chbx9"><span></span>Подтвердите пароль</label>
+                           </div>
+                           <div class="page_pers-right-form-chbx">
+                               <input type="checkbox" id="chbx10"/>
+                               <label for="chbx10"><span></span>Подтвердите пароль</label>
+                           </div>
+                           <div class="page_pers-right-form-chbx">
+                               <input type="checkbox" id="chbx11"/>
+                               <label for="chbx11"><span></span>Подтвердите пароль</label>
+                           </div>
+                           <div class="page_pers-right-form-chbx">
+                               <input type="checkbox" id="chbx12"/>
+                               <label for="chbx12"><span></span>Подтвердите пароль</label>
+                           </div>
+                       </div>   
+                   </div>
+               </div>
+          </div>
+           <div class="row page_pers-row">
+               <div class="col-12 col-md-6 col-lg-3">
+                   <div class="page_pers-left-ttl">Удалить аккаунт</div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-5">
+                   <div class="row page_pers-right-bl">              
+                       <div class="col-12 col-md-6 col-lg-9">
+                           <div class="page_pers-right-big_txt">
+                                Давно выяснено, что при оценке дизайна и композиции <br>
+                                читаемый текст мешает сосредоточиться. Lorem Ipsum <br>
+                                используют потому, что тот обеспечивает более <br>
+                                или менее стандартное заполнение шаблона
+                           </div>
+                       </div>
+                       <div class="col-12 col-md-6 col-lg-3">
+                           <button class="page_pers-right-form-chkphn" type="button">Сохранить</button>
+                       </div>
+                   </div>
+               </div>
+          </div>
+       </div>
+   </div>   
+</div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-2">
+               <div class="f-left">
+                   <a href="index.html" class="f-logo" title="Goawa">GOAWA</a>
+                   <div class="f-btm">
+                       <div class="f-soc">
+                           <a href="#" class="vk">VK</a>
+                           <a href="#" class="fb">FB</a>
+                           <a href="#" class="in">IN</a>
+                           <a href="#" class="yt">YT</a>
+                       </div>
+                       <a href="mailto:support@tjournal.ru" class="f-ml">support@tjournal.ru</a>
+                   </div>
+               </div>
+            </div>
+            <div class="col-12 col-lg-10">
+               <div class="f-right">
+                    <div class="f-menu">
+                        <ul>
+                            <li><a href="compet.html">Конкурсы</a></li>
+                            <li><a href="#">Батлы</a></li>
+                            <li><a href="#">Обучение</a></li>
+                            <li><a href="#">Рейтинг</a></li>
+                            <li><a href="#">О проекте</a></li>
+                        </ul>
+                    </div>
+                    <div class="f-right-btm">
+                        <ul>
+                            <li><a href="#">Условия использования</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Сообщество</a></li>
+                            <li><a href="#">Рейтинг</a></li>
+                            <li><a href="#">Часто задаваемые вопросы</a></li>
+                            <li class="copy"><span>GOAWA 2018</span></li>
+                        </ul>
+                    </div>                    
+               </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

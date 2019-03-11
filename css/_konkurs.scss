@@ -218,3 +218,31 @@
         }
     }
 }
+
+/*page_konkurs_modal*/
+.modal_call_us {padding-top: 225px;
+    &_wp { min-height: 100vh; background: #2413be;
+        .modal-zagr { color: #fff; font-size: 4.8vw; font-family: 'futurafuturisc', sans-serif; font-weight: 500; 
+            &-txt { margin-top: 2vw; 
+                a {text-decoration: underline; color: #fff;}
+            }
+        } 
+        .fancybox-item {
+            &.fancybox-close { width: auto; height: auto; position: absolute; right: 15%; display: block; top: 195px; color: #fff; background: none; 
+                &:before { content: 'закрыть'; color: #fff; font-size: 4.8vw; font-family: 'futurafuturisc', sans-serif; font-weight: 500; }
+            }
+        }
+        .fancybox-skin { min-height: 100vh; background: #2413be;} 
+        .fancybox-outer { min-height: 100vh; } 
+        .fancybox-inner { min-height: 100vh; }        
+    }
+}
+/*page_konkurs_modal*/
+
+@media(max-width: 767px){
+    .modal_call_us { padding-top: 125px;
+        &_wp { 
+                .fancybox-close { top: 85px;}        
+        }        
+    }
+}

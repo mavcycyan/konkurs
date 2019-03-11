@@ -12,6 +12,8 @@
 	<link rel="canonical" href="">
 	<title>Goawa</title> 
 
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" />
+    
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="css/main.css" rel="stylesheet">
 	
@@ -308,6 +310,69 @@
         </div>
     </div>
 </footer>
+
+<div style="display:none;">
+    <div id="modal_call_us" class="modal_call_us" style="display: block;">
+        <div class="clearfix"></div>
+        <div class="container">
+            <div class="modal-zagr">
+                <div class="modal-zagr-ttl">Alex! <img src="img/dwnld-smile.png" alt=""></div>
+                <div class="modal-zagr-txt">Ваш проект опубликован, <br>посмотреть его можете в своём <br><a href="#">личном кабинете <img src="img/arr.png" alt=""></a></div>
+            </div>
+        </div>			
+    </div>    
+</div> 
+
+<div style="display:none;">
+    <div id="modal_call_us2" class="modal_call_us" style="display: block;">
+        <div class="clearfix"></div>
+        <div class="container">
+            <div class="modal-zagr">
+                <div class="modal-zagr-ttl">Спасибо! <img src="img/dwnld-smile.png" alt=""></div>
+                <div class="modal-zagr-txt">Чтобы войти в личный кабинет, <br>Вам необходимо подтвердить <br>ваш <a href="#">email <img src="img/arr.png" alt=""></a></div>
+            </div>
+        </div>			
+    </div>    
+</div> 
+
+<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js" ></script>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function($){
+$(".fancybox").fancybox();
+});
+</script>	
+<script>
+$(window).load(function() {
+$('.load').fadeOut('slow');
+});
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function($){	
+    $(".page_konkurs-pabl").fancybox({ 
+        href: '#modal_call_us', 
+        wrapCSS: 'modal_call_us_wp',
+        minWidth: '100%',
+        margin: [0, 0, 0, 0],
+        padding: [0, 0, 0, 0],
+        autoScale: true
+    });
+});
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function($){	
+    $(".h-right-form button").fancybox({ 
+        href: '#modal_call_us2', 
+        wrapCSS: 'modal_call_us_wp',
+        minWidth: '100%',
+        margin: [0, 0, 0, 0],
+        padding: [0, 0, 0, 0],
+        autoScale: true
+    });
+});
+</script>
+
 
 <script src="js/main.js"></script>
 
