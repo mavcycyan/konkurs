@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<base href=""/>
+
+	<meta name="keywords" content=". " />
+	<meta name="description" content="" />
+	<link rel="canonical" href="">
+	<title>Goawa</title> 
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/main.css" rel="stylesheet">
+	
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->	
+
+	
+	<link rel="ICON" href="favicon.ico" />
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+
+</head>
+
+<body>
+
+<header class="fixed">
+   <div class="h-pc">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-2">
+                    <a href="index.html" class="h-logo" title="Goawa">GOAWA</a>
+                </div>
+                <div class="col-12 col-md-11 col-lg-4 order-md-3 order-lg-2">
+                    <div class="h-menu">
+                        <ul>
+                            <li><a href="compet.html">Конкурсы</a></li>
+                            <li><a href="#">Батлы</a></li>
+                            <li><a href="#">Обучение</a></li>
+                            <li><a href="#">Рейтинг</a></li>
+                            <li><a href="#">О проекте</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-1 col-lg-1 order-md-3 order-lg-3">
+                    <div class="h-srch">
+                        <button class="h-srch-btn"></button>
+                        <div class="h-srch-cont">
+                            <input type="text" placeholder="Что ищем ?" class="h-srch-cont-input">
+                            <button class="h-srch-cont-btn">Найти</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 order-md-2 order-lg-4">
+                    <div class="h-right">
+                        <div class="h-right-mess">
+                            <a href="#uv1" class="h-right-uv"><span>24</span></a>
+                            <a href="#uv2" class="h-right-bell"></a>
+                        </div>
+                        <div class="h-right-avat"><img src="img/avat.jpg" alt=""></div>
+                        <div id="uv1" class="h-right-list">
+                            <div class="h-right-list-bl">
+                                <div class="h-right-list-bl-img"><img src="img/dash-alx.jpg" alt="" width="100" height="100"></div>
+                                <div class="h-right-list-bl-r">
+                                    <div class="h-right-list-bl-ttl">ALEX BOGOMAZOV</div>
+                                    <div class="h-right-list-bl-txt">
+                                        Пригласил вас в роли организатора <br>
+                                        в конкурс <a href="#">Концепт сайта для Adidas</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-right-list-bl">
+                                <div class="h-right-list-bl-img"><img src="img/dash-alx.jpg" alt="" width="100" height="100"></div>
+                                <div class="h-right-list-bl-r">
+                                    <div class="h-right-list-bl-ttl">ALEX BOGOMAZOV</div>
+                                    <div class="h-right-list-bl-txt">
+                                        Пригласил вас в роли организатора <br>
+                                        в конкурс <a href="#">Концепт сайта для Adidas</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-right-list-bl">
+                                <div class="h-right-list-bl-img"><img src="img/dash-alx.jpg" alt="" width="100" height="100"></div>
+                                <div class="h-right-list-bl-r">
+                                    <div class="h-right-list-bl-ttl">ALEX BOGOMAZOV</div>
+                                    <div class="h-right-list-bl-txt">
+                                        Пригласил вас в роли организатора <br>
+                                        в конкурс <a href="#">Концепт сайта для Adidas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="uv2" class="h-right-list">
+                            
+                        </div>
+                    </div>
+                   <script>
+                        $('.h-right-mess a').click(function(e){
+                            e.preventDefault();
+                            $('.h-right-list').removeClass('active');
+                            $($(this).attr('href')).addClass('active');
+                        });
+                   </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h-mob">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <div class="h-mob-srch">
+                        <button class="h-mob-srch-btn"></button>
+                        <div class="h-mob-srch-cont">
+                            <input type="text" placeholder="Что ищем ?" class="h-mob-srch-cont-input" />
+                            <button class="h-mob-srch-cont-btn">Найти</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="index.html" class="h-mob-logo" title="Goawa">GOAWA</a>
+                </div>
+                <div class="col-4">
+                    <div class="h-mob-btn">
+                        <button>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="h-mob-menu hidden">
+    <ul>
+        <li><a href="compet.html">Конкурсы</a></li>
+        <li><a href="#">Батлы</a></li>
+        <li><a href="#">Обучение</a></li>
+        <li><a href="#">Рейтинг</a></li>
+        <li><a href="#">О проекте</a></li>
+    </ul>
+</div>
+</header>
+        
+<div class="wrapper">
+   <div class="page_dash">
+        <div class="page_dash-side">
+            <div class="page_dash-side-img"><img src="img/dash-alx.jpg" alt=""></div>
+            <div class="page_dash-side-txt">
+                <div class="page_dash-side-row"><span class="left">Подписчики</span><span class="right">3</span></div>
+                <div class="page_dash-side-row"><span class="left">Подписки</span><span class="right">12</span></div>
+                <div class="page_dash-side-row"><span class="left">Команда</span><span class="right">0</span></div>
+            </div>
+            <div class="page_dash-side-soc">
+                <a href="#" target="_blank">VK</a>
+                <a href="#" target="_blank">FB</a>
+                <a href="#" target="_blank">IN</a>
+                <a href="#" target="_blank">YT</a>
+            </div>
+            <a href="tel:79065665206" class="page_dash-side-phn">+79065665206</a>
+            <a href="htp://bogomazov.art" class="page_dash-side-site">bogomazov.art</a>
+            <a href="mailto:bogomazovart@gmail.com" class="page_dash-side-ml">bogomazovart@gmail.com</a>
+        </div>      
+       <div class="container">
+           <div class="row">
+               <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                   <div class="page_dash-ttl">Max Ybivan</div>
+                   <div class="page_dash-addr">Белгород, Россия</div>
+                   <div class="page_dash-spec">web design, ui/ux, motion design</div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
+                   <div class="page_dash-sum">
+                       <span>53</span>/100
+                   </div>
+                   <div class="page_dash-tabs">
+                       <a href="#btkn1" class="active">Конкурсы</a>
+                       <a href="#btkn2">Батлы</a>
+                   </div>
+                   <div id="btkn1" class="page_dash-cont active">
+                       <div class="row">
+                           <div class="col-12 col-md-6 col-lg-4">
+                               <div class="page_dash-cont-row"><span class="left">Победа</span><span class="right">6</span></div>
+                               <div class="page_dash-cont-row"><span class="left">Поражение</span><span class="right">2</span></div>
+                               <div class="page_dash-cont-row"><span class="left">Ничья</span><span class="right">0</span></div>
+                           </div>
+                           <div class="col-12 col-md-6 col-lg-4 offsrt-lg-2">
+                               <div class="page_dash-cont-row"><span class="left">1 е место:</span><span class="right">6</span></div>
+                               <div class="page_dash-cont-row"><span class="left">2 е место:</span><span class="right">2</span></div>
+                               <div class="page_dash-cont-row"><span class="left">3 е место:</span><span class="right">4</span></div>
+                           </div>
+                       </div>
+                   </div>
+                   <div id="btkn2" class="page_dash-cont">
+                       <div class="row">
+                           <div class="col-12 col-md-6 col-lg-4">
+                               <div class="page_dash-cont-row"><span class="left">Победа</span><span class="right">0</span></div>
+                               <div class="page_dash-cont-row"><span class="left">Пораждениие</span><span class="right">0</span></div>
+                               <div class="page_dash-cont-row"><span class="left">Ничья</span><span class="right">0</span></div>
+                           </div>
+                           <div class="col-12 col-md-6 col-lg-4 offsrt-lg-2">
+                               <div class="page_dash-cont-row"><span class="left">1 е место:</span><span class="right">0</span></div>
+                               <div class="page_dash-cont-row"><span class="left">2 е место:</span><span class="right">0</span></div>
+                               <div class="page_dash-cont-row"><span class="left">3 е место:</span><span class="right">0</span></div>
+                           </div>
+                       </div>
+                   </div>
+                   <script>
+                        $('.page_dash-tabs a').click(function(e){
+                            e.preventDefault();
+                            $('.page_dash-tabs a').removeClass('active');
+                            $(this).addClass('active');
+                            $('.page_dash-cont').removeClass('active');
+                            $($(this).attr('href')).addClass('active');
+                        });
+                   </script>
+               </div>
+               <div class="col-12 col-lg-10 offset-lg-2">
+                   <div class="page_dash-txt">
+                        Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает <br>
+                        сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более <br>
+                        или менее стандартное заполнение шаблона.
+                  </div>
+                   <div class="page_dash-bigtabs">
+                       <a href="#btkn11" class="active">Конкурсы</a>
+                       <a href="#btkn12">Батлы</a>
+                   </div>
+                   <div id="btkn11" class="page_dash-bigcont active">
+                       <a href="#" class="page_dash-btn">Найти конкурс</a>
+                   </div>
+                   <div id="btkn12" class="page_dash-bigcont">
+                       <a href="#" class="page_dash-btn">Найти батл</a>
+                   </div>
+                   <script>
+                        $('.page_dash-bigtabs a').click(function(e){
+                            e.preventDefault();
+                            $('.page_dash-bigtabs a').removeClass('active');
+                            $(this).addClass('active');
+                            $('.page_dash-bigcont').removeClass('active');
+                            $($(this).attr('href')).addClass('active');
+                        });
+                   </script>
+               </div>
+           </div>
+       </div>
+   </div>   
+</div>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-lg-2">
+               <div class="f-left">
+                   <a href="index.html" class="f-logo" title="Goawa">GOAWA</a>
+                   <div class="f-btm">
+                       <div class="f-soc">
+                           <a href="#" class="vk">VK</a>
+                           <a href="#" class="fb">FB</a>
+                           <a href="#" class="in">IN</a>
+                           <a href="#" class="yt">YT</a>
+                       </div>
+                       <a href="mailto:support@tjournal.ru" class="f-ml">support@tjournal.ru</a>
+                   </div>
+               </div>
+            </div>
+            <div class="col-12 col-lg-10">
+               <div class="f-right">
+                    <div class="f-menu">
+                        <ul>
+                            <li><a href="compet.html">Конкурсы</a></li>
+                            <li><a href="#">Батлы</a></li>
+                            <li><a href="#">Обучение</a></li>
+                            <li><a href="#">Рейтинг</a></li>
+                            <li><a href="#">О проекте</a></li>
+                        </ul>
+                    </div>
+                    <div class="f-right-btm">
+                        <ul>
+                            <li><a href="#">Условия использования</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Сообщество</a></li>
+                            <li><a href="#">Рейтинг</a></li>
+                            <li><a href="#">Часто задаваемые вопросы</a></li>
+                            <li class="copy"><span>GOAWA 2018</span></li>
+                        </ul>
+                    </div>                    
+               </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

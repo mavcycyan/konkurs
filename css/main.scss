@@ -132,7 +132,28 @@ input, button, select, textarea {
                 }
             }
         }  
+        &-mess {position: absolute; right: 170px;
+            a { display: inline-block; width: 26px; height: 28px; 
+                span { color: #2413be; position: absolute; background: #fff; font-size: 14px; width: 28px; text-align: center; height: 20px; border-radius: 7px; top: -4px; left: 16px; }
+            }
+        }
+        &-uv {background: url('../img/h-uv.png')no-repeat 50% 50%;margin-right: 25px;} 
+        &-bell {background: url('../img/h-bell.png')no-repeat 50% 50%;}     
+        &-avat { position: absolute; right: 0; height: 100px; width: 100px; top: 0; }
+        &-list { display: none;  background: #2413be; max-width: 580px; padding: 0 60px; padding-bottom: 50px; position: absolute; top: 123px; overflow: auto; height: 464px; max-height: calc(100vh - 125px);
+            &.active { display: block; }
+            &-bl { margin-top: 30px; overflow: hidden; 
+                &-img { float: left; }
+                &-r { float: left; margin-left: 30px; }
+                &-ttl { text-transform: uppercase; color: #fff; } 
+                &-txt { margin-top: 30px; color: #fff; font-family: 'futurafuturisc', sans-serif; font-weight: 300; font-size: 18px; 
+                    a { color: #fff; text-decoration: underline; }
+                } 
+            } 
+            
+        } 
     } 
+    
 }
 header { padding: 40px 0;padding-left: 35px;background: #fff;position: fixed; left: 0;width: 100%;top: 0; z-index: 200;
     &.fixed{
@@ -219,6 +240,7 @@ header { padding: 40px 0;padding-left: 35px;background: #fff;position: fixed; le
 @import "_compet";
 @import "_konkurs";
 @import "_pers";
+@import "_dash";
  
 
 /*footer*/
