@@ -1,5 +1,6 @@
 /*page_dash*/
 .page_dash {margin-top: calc(6.5vw + 36px); padding-bottom: 50px;overflow: hidden;
+    .fp-tableCell { padding-top: 0; }
     .col-12 {padding: 0 15px;}
     &-ttl { font-size: 2.5vw; color: #2312be; position: relative; line-height: 1.2; 
         a { font-size: 16px; position: absolute; text-decoration: underline; color: #2312be; }
@@ -20,7 +21,7 @@
     }
     &-addr { margin-top: 30px; font-size: 18px; color: #2413be; } 
     &-spec { margin-top: 30px; font-size: 18px; color: #2413be; }
-    &-txt { margin-top: 6vw; font-size: 24px; color: #2413be; line-height: 1.2; }
+    &-txt { margin-top: 3vw; font-size: 24px; color: #2413be; line-height: 1.2;font-size: 2.2vmin; }
     &-sum { font-size: 16px; font-family: 'futurafuturisc', sans-serif; font-weight: 300; color: #2413be; 
         span { font-family: 'futurademic', sans-serif; font-size: 30px; }
     }
@@ -31,28 +32,68 @@
     } 
     &-cont { margin-top: 30px; display: none; 
         &.active { display: block; }
-        &-row { font-size: 18px; font-family: 'futurafuturisc', sans-serif; font-weight: 300; color: #2413be; 
-            span.left { display: inline-block; min-width: 137px; } 
+        &-row { font-size: 18px; font-family: 'futurafuturisc', sans-serif; font-weight: 300; color: #2413be; font-size: 2vmin;
+            span.left { display: inline-block; min-width: 137px; min-width: 12vmin; } 
             span.right { font-family: 'futurademic', sans-serif; } 
         } 
     }
-    &-bigtabs { margin-top: 5vw; 
-        a { font-size: 48px; color: #2413be; margin-right: 30px; display: inline-block; 
+    &-bigtabs { margin-top: 3vw; 
+        a { font-size: 48px; color: #2413be; margin-right: 30px; display: inline-block; font-size: 4.5vmin;
             &.active { text-decoration: underline; }
         } 
     } 
     &-bigcont { display: none; 
-        &.active { display: block; margin-top: 5vw; }
+        &.active { display: block; margin-top: 3vw; }
         
     }   
     &-btn { font-size: 36px; font-family: 'futurafuturisc', sans-serif; font-weight: 500; background: url(../img/arr.png) no-repeat 90% 50%, #2413be; color: #fff; width: 100%; max-width: 800px; display: block; padding: 22px 10%; 
         &:hover, &:focus {text-decoration: none; color: #fff;}
     }
+    &-dates {
+        &-bl{
+            &-txt { color: #2413be; font-size: 24px; }
+        }
+    }
+    &-peop {
+        &-bl{margin-bottom: 20px;
+            &-name { color: #2413be; font-size: 24px; }
+            &-txt { color: #37363b; font-size: 16px; font-family: 'futurafuturisc', sans-serif; font-weight: 300; }
+        }
+    }
+    &-last {
+        &-bl { max-width: 319px; display: block; 
+            &-img { position: relative; }  
+            &-ttl { position: absolute; font-size: 24px; color: #fff; padding-left: 22px; bottom: 20px; padding-right: 50px; background: url(../img/arr.png) no-repeat 100% 50%; }
+            &-cont { background: #000; color: #fff; font-family: 'futurafuturisc', sans-serif; font-weight: 300; overflow: hidden; padding: 15px 20px; 
+                &-view { float: left; background: url('../img/lst-v.png')no-repeat 0% 50%; padding: 3px 0 0; padding-left: 35px; } 
+                &-like { float: right; background: url('../img/lst-h.png')no-repeat 0% 50%; padding: 3px 0 0; padding-left: 35px; }
+            } 
+        }
+    }
+    
 }
 
 /*page_dash*/
 
-@media(max-width: 767px){
+@media(min-width: 1200px){
+    .page_dash {
+        &-dates { width: 121vmin; 
+            &-bl {
+                &-txt { font-size: 2.2vmin; }  
+                &-img { max-width: 15vmin; }
+            }
+        }        
+        &-peop { width: 121vmin; 
+            &-bl {
+                &-name { font-size: 2.2vmin; } 
+                &-txt { font-size: 1.5vmin; } 
+                &-img { max-width: 15vmin; }
+            }
+        } 
+    }
+}
+
+@media(max-width: 991px){
     .page_dash {
         &-side { position: static; 
             &-img { max-width: 267px; margin: 0 auto; }
@@ -70,6 +111,8 @@
         &-ttl { font-size: 30px; 
             a { position: static; display: block; margin-top: 15px; }
         }
+        &-last{
+            &-bl {margin: 0 auto 15px;}
+        }
     }
 }
-.page_dash-side-phn {  } .page_dash-side-site { padding: 0; max-width: 267px; margin: 0 auto; margin-top: 5vh; } .page_dash-side-ml { padding: 0; max-width: 267px; margin: 0 auto; margin-top: 5vh; }

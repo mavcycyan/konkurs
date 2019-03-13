@@ -97,14 +97,28 @@
                             </div>
                         </div>
                         <div id="uv2" class="h-right-list">
-                            
+                            <div class="h-right-list-bl">
+                                <div class="h-right-list-bl-img"><img src="img/dash-alx.jpg" alt="" width="100" height="100"></div>
+                                <div class="h-right-list-bl-r">
+                                    <div class="h-right-list-bl-ttl">ALEX BOGOMAZOV</div>
+                                    <div class="h-right-list-bl-txt">
+                                        Пригласил вас в роли организатора <br>
+                                        в конкурс <a href="#">Концепт сайта для Adidas</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                    <script>
                         $('.h-right-mess a').click(function(e){
                             e.preventDefault();
                             $('.h-right-list').removeClass('active');
-                            $($(this).attr('href')).addClass('active');
+                            if($($(this).attr('href')).hasClass('active')){
+                                $($(this).attr('href')).removeClass('active');
+                            }
+                            else {
+                                $($(this).attr('href')).addClass('active');
+                            }
                         });
                    </script>
                 </div>
@@ -187,7 +201,7 @@
                        <div class="row">
                            <div class="col-12 col-md-6 col-lg-4">
                                <div class="page_dash-cont-row"><span class="left">Победа</span><span class="right">0</span></div>
-                               <div class="page_dash-cont-row"><span class="left">Пораждениие</span><span class="right">0</span></div>
+                               <div class="page_dash-cont-row"><span class="left">Поражение</span><span class="right">0</span></div>
                                <div class="page_dash-cont-row"><span class="left">Ничья</span><span class="right">0</span></div>
                            </div>
                            <div class="col-12 col-md-6 col-lg-4 offsrt-lg-2">
@@ -201,7 +215,7 @@
                        <div class="row">
                            <div class="col-12 col-md-6 col-lg-4">
                                <div class="page_dash-cont-row"><span class="left">Победа</span><span class="right">0</span></div>
-                               <div class="page_dash-cont-row"><span class="left">Пораждениие</span><span class="right">0</span></div>
+                               <div class="page_dash-cont-row"><span class="left">Поражение</span><span class="right">0</span></div>
                                <div class="page_dash-cont-row"><span class="left">Ничья</span><span class="right">0</span></div>
                            </div>
                            <div class="col-12 col-md-6 col-lg-4 offsrt-lg-2">
