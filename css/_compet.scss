@@ -93,15 +93,33 @@
         &-bl {display: inline-block; width: 230px; max-width: 32%; padding: 0 10px;
             select { border: 0; border-bottom: 1px solid #fff; background: none; color: #fff; display: block; margin-bottom: 20px; width: 100%; padding-bottom: 7px; text-transform: uppercase; letter-spacing: 3px; max-width: 220px; margin: 20px auto;
                 &:focus {box-shadow:none; outline:0;}
-            }              
+            }   
+            .ui-selectmenu-button.ui-button { width: 100%; border: 0; border-bottom: 1px solid #fff; background: none; color: #fff; display: block; margin-bottom: 20px; width: 100%; padding-bottom: 7px; text-transform: uppercase; letter-spacing: 3px; max-width: 220px; margin: 20px auto; 
+                &:focus {outline: 0; box-shadow: none;}
+            } 
+             
         }
-        &-left { padding: 20px 3vw; background: #2413be;text-align: right;}
+        &-left { padding: 20px 3vw; background: #2413be;text-align: right;
+            
+        }
         &-right { padding: 20px 3vw;
             .page_compet-panel-bl { max-width: 40%;
                 select {border-bottom: 1px solid #2413be; color: #2413be;}
+                .ui-selectmenu-button.ui-button {border-bottom: 1px solid #2413be; color: #2413be;} 
+                
             }
         }
     }
+}
+            .ui-widget.ui-widget-content { border: 0; background: #2413be;margin: 0;padding-top: 10px;}
+            .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover { background: none; } 
+            .ui-menu .ui-menu-item-wrapper { border: 0; color: #fff;margin: 0; } 
+            li.ui-state-disabled.ui-menu-item { display: none; }
+
+#ui-id-4-menu, #ui-id-5-menu{
+    &.ui-widget.ui-widget-content { background: #fff;}
+    .ui-menu-item-wrapper { color: #2413be;} 
+    
 }
 /*page_compet*/
 @media(min-width: 992px) and (max-width: 1600px){
@@ -156,10 +174,15 @@
     @media(min-width: 1200px) and (max-width: 1600px){
         .page_compet_konk {
             &-btn {margin-top: 0;}
-            &-bl { max-width: 179px; 
-                &-num { font-size: 19px; width: 61%; padding: 5% 5%; font-size: 100%; } 
-                &-side span { line-height: 1; left: -50%; }
-                &-top span { font-size: 100%; } 
-            } 
+        &-bl { max-width: 153px; 
+            &-num { font-size: 19px; width: 61%; padding: 5% 5%; font-size: 100%; } 
+            &-side span { line-height: 1; left: -50%; }
+            &-top span { font-size: 100%; }
+            &-ttl {font-size: 11px;}
+            &-top {
+                span {font-size: 12px!important;}
+            }
+            &-num {font-size: 11px;}
+        } 
         }
     }

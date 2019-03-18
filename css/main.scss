@@ -244,9 +244,9 @@ header { padding: 40px 0;padding-left: 35px;background: #fff;position: fixed; le
  
 
 /*footer*/
-footer { background: #2413be; color: #fff; padding-left: 35px;} 
+footer { background: #2413be; color: #fff; padding-left: 35px;background: #000;} 
 .f {
-    &-left {display: flex; justify-content: space-between; flex-direction: column;min-height: 390px;padding-bottom: 30px;}
+    &-left {display: flex; justify-content: space-between; flex-direction: column;min-height: 390px;padding-bottom: 30px; background: #2413be; margin-left: -15px; padding-left: 15px;}
     &-right {background: #000; display: flex; justify-content: space-between; flex-direction: column; min-height: 100%;
         &-btm { margin-top: 19px; padding-bottom: 30px;
             ul { padding: 0 10%; margin: 0; list-style: none; text-align: justify;
